@@ -1,0 +1,147 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>設定 · toio™コア キューブ 技術仕様</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;キューブは自身の通信仕様のバージョン情報や各種設定情報を内部に保存しています。&lt;/p&gt;
+"/><meta name="docsearch:version" content="next"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="設定 · toio™コア キューブ 技術仕様"/><meta property="og:type" content="website"/><meta property="og:url" content="https://toio.github.io/toio-spec/"/><meta property="og:description" content="&lt;p&gt;キューブは自身の通信仕様のバージョン情報や各種設定情報を内部に保存しています。&lt;/p&gt;
+"/><meta property="og:image" content="https://toio.github.io/toio-spec/img/social_image.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://toio.github.io/toio-spec/img/social_image.png"/><link rel="shortcut icon" href="/toio-spec/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-133660753-1"></script><script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments); }
+              gtag('js', new Date());
+              gtag('config', 'UA-133660753-1');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/toio-spec/js/scrollSpy.js"></script><link rel="stylesheet" href="/toio-spec/css/main.css"/><script src="/toio-spec/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/toio-spec/"><h2 class="headerTitle">toio™コア キューブ 技術仕様</h2></a><a href="/toio-spec/versions"><h3>next</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a target="_self"></a></li><li class="siteNavGroupActive"><a href="/toio-spec/docs/next/about" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>各種機能</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">はじめに</h3><ul class=""><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/about">このサイトについて</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/how_to_use_cube">キューブの使い方</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">ハードウェア仕様</h3><ul class=""><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/hardware_components">各部の名前</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/hardware_shape">形状・サイズ</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/hardware_other">走行性能</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">通信仕様</h3><ul class=""><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_communication_overview">通信概要</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_how_to_communicate">機能の利用</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">各種機能</h4><ul><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_id">読み取りセンサー</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_sensor">モーションセンサー</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_button">ボタン</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_battery">バッテリー</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_motor">モーター</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_light">ランプ</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_sound">サウンド</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/toio-spec/docs/next/ble_configuration">設定</a></li></ul></div></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">設定</h1></header><article><div><span><p>キューブは自身の通信仕様のバージョン情報や各種設定情報を内部に保存しています。
+これらの情報は以下の特性（characteristic）を使うことで取得や変更ができます。</p>
+<table>
+<thead>
+<tr><th>プロパティ</th><th>値</th></tr>
+</thead>
+<tbody>
+<tr><td>Characteristic UUID</td><td>10B201FF-5B3B-4571-9508-CF3EFCD7BBAE</td></tr>
+<tr><td>Properties</td><td><a href="#書き込み操作">Write</a>, <a href="#読み出し操作">Read</a>, <a href="#通知">Notify</a></td></tr>
+<tr><td>Descriptor</td><td>Configuration</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="書き込み操作"></a><a href="#書き込み操作" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>書き込み操作</h2>
+<h3><a class="anchor" aria-hidden="true" id="ble-プロトコルバージョンの要求"></a><a href="#ble-プロトコルバージョンの要求" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>BLE プロトコルバージョンの要求</h3>
+<p>以下のデータを書き込むことでキューブの BLE プロトコルバージョンを要求できます。結果の取得方法は <a href="#ble-プロトコルバージョンの取得">BLE プロトコルバージョンの取得</a>を参照してください。</p>
+<table>
+<thead>
+<tr><th>データ位置</th><th>タイプ</th><th>内容</th><th>例</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>UInt8</td><td>設定の種類</td><td><span fixed><code>0x01</code></span>（BLE プロトコルバージョンの要求）</td></tr>
+<tr><td>1</td><td>UInt8</td><td>Reserved</td><td><code>0x00</code></td></tr>
+</tbody>
+</table>
+<h3><a class="anchor" aria-hidden="true" id="水平検出のしきい値設定"></a><a href="#水平検出のしきい値設定" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>水平検出のしきい値設定</h3>
+<p><a href="/toio-spec/docs/next/ble_sensor">モーションセンサー</a>で取得できる水平検出はキューブの底面と水平面のなす角度（下の図の θ）がしきい値を超えると<code>0x00</code>（水平でない）となります。以下のデータを書き込むことでこのしきい値を変更できます。</p>
+<table>
+<thead>
+<tr><th>データ位置</th><th>タイプ</th><th>内容</th><th>例</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>UInt8</td><td>設定の種類</td><td><span fixed><code>0x05</code></span>（水平検出のしきい値設定）</td></tr>
+<tr><td>1</td><td>UInt8</td><td>角度のしきい値</td><td><code>0x0A</code> (10 度）</td></tr>
+</tbody>
+</table>
+<p>このしきい値はロール方向とピッチ方向の回転の両方に適用されます。デフォルトの値は 45 度となっており、キューブの接続が切れるとしきい値設定は破棄されデフォルトに戻ります。</p>
+<p><strong>ロール方向</strong>
+<img src="/toio-spec/docs/assets/configuration_flat_status_threshold_roll.svg" alt="Flat Status Threshold - Roll"></p>
+<p><strong>ピッチ方向</strong>
+<img src="/toio-spec/docs/assets/configuration_flat_status_threshold_pitch.svg" alt="Flat Status Threshold - Pitch"></p>
+<table>
+<thead>
+<tr><th>プロパティ</th><th>値の範囲</th><th>デフォルト値</th></tr>
+</thead>
+<tbody>
+<tr><td>Threshold angle</td><td><code>1</code> - <code>45</code> (度）</td><td><code>45</code> (度）</td></tr>
+</tbody>
+</table>
+<h3><a class="anchor" aria-hidden="true" id="衝突検出のしきい値設定"></a><a href="#衝突検出のしきい値設定" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>衝突検出のしきい値設定</h3>
+<p><a href="/toio-spec/docs/next/ble_sensor">モーションセンサー</a>で取得できる衝突検出はキューブの受ける衝突の強さがしきい値を超えると<code>0x01</code>（衝突あり）となります。以下のデータを書き込むことでこのしきい値を変更できます。</p>
+<table>
+<thead>
+<tr><th>データ位置</th><th>タイプ</th><th>内容</th><th>例</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>UInt8</td><td>設定の種類</td><td><span fixed><code>0x06</code></span>（衝突検出のしきい値設定）</td></tr>
+<tr><td>1</td><td>UInt8</td><td>しきい値</td><td><code>0x0A</code> (level 10)</td></tr>
+</tbody>
+</table>
+<p>このしきい値の設定可能範囲とデフォルト値は以下のとおりです。値の大きは衝突の大きさを意味します。また、キューブの接続が切れるとしきい値設定は破棄されデフォルトに戻ります。</p>
+<table>
+<thead>
+<tr><th>プロパティ</th><th>値の範囲</th><th>デフォルト値</th></tr>
+</thead>
+<tbody>
+<tr><td>しきい値</td><td><code>1</code> - <code>10</code> (level)</td><td><code>7</code> (level)</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="読み出し操作"></a><a href="#読み出し操作" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>読み出し操作</h2>
+<h3><a class="anchor" aria-hidden="true" id="ble-プロトコルバージョンの取得"></a><a href="#ble-プロトコルバージョンの取得" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>BLE プロトコルバージョンの取得</h3>
+<p>要求方法に関しては <a href="#ble-プロトコルバージョンの要求">BLE プロトコルバージョンの要求</a>を参照してください。</p>
+<table>
+<thead>
+<tr><th>データ位置</th><th>タイプ</th><th>内容</th><th>例</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>UInt8</td><td>設定の種類</td><td><span fixed><code>0x81</code></span>（BLE プロトコルバージョンの取得）</td></tr>
+<tr><td>1</td><td>UInt8</td><td>Reserved</td><td><code>0x00</code></td></tr>
+<tr><td>2</td><td>String</td><td>BLE プロトコルバージョン（6 bytes utf-8）</td><td> </td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="通知"></a><a href="#通知" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>通知</h2>
+<p><a href="#読み出し操作">読み出し操作</a>で得られるデータは通知でも受け取ることが出来ます。</p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 6/12/2019</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/toio-spec/docs/next/ble_sound"><span class="arrow-prev">← </span><span>サウンド</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#書き込み操作">書き込み操作</a><ul class="toc-headings"><li><a href="#ble-プロトコルバージョンの要求">BLE プロトコルバージョンの要求</a></li><li><a href="#水平検出のしきい値設定">水平検出のしきい値設定</a></li><li><a href="#衝突検出のしきい値設定">衝突検出のしきい値設定</a></li></ul></li><li><a href="#読み出し操作">読み出し操作</a><ul class="toc-headings"><li><a href="#ble-プロトコルバージョンの取得">BLE プロトコルバージョンの取得</a></li></ul></li><li><a href="#通知">通知</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><div><h5>Docs</h5><a href="/toio-spec/docs/about.html">はじめに</a><a href="/toio-spec/docs/hardware_components.html">ハードウェアについて</a><a href="/toio-spec/docs/ble_communication_overview.html">通信仕様について</a></div><div><h5>Community</h5><a href="/toio-spec/en/users.html">ユーザー＆ライブラリ</a><a href="https://stackoverflow.com/questions/tagged/toio" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://ja.stackoverflow.com/questions/tagged/toio" target="_blank" rel="noreferrer noopener">スタック・オーバーフロー</a></div><div><h5>More</h5><a href="https://toio.io" target="_blank" rel="noreferrer noopener">Official Web</a><a href="https://toio.io/platform/index.html" target="_blank" rel="noreferrer noopener">Official Web | toio 本体セット</a><a href="https://toio.io/platform/technology.html" target="_blank" rel="noreferrer noopener">Official Web | toio Technology</a><a href="https://github.com/toio/toio-spec" target="_blank" rel="noreferrer noopener">GitHub</a><a class="github-button" href="https://github.com/toio/toio-spec" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub" rel="noreferrer noopener">Star</a></div></section><section class="license"><p>The document is licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer noopener">Creative Commons Attribution 4.0 International License</a>.</p><p>The image is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank" rel="noreferrer noopener">Creative Commons Attribution-NoDerivatives 4.0 International License</a>.</p></section><section class="copyright"><p>Copyright © 2019 Sony Interactive Entertainment Inc.</p><p><a href="https://www.sie.com/website.html" target="_blank" rel="noreferrer noopener">Cookie Policy</a></p><p><a href="https://toio.io/privacy.html" target="_blank" rel="noreferrer noopener">Privacy Policy</a></p></section></footer></div></body></html>
