@@ -1,0 +1,24 @@
+{
+  "docs": {
+    "はじめに": ["about", "how_to_use_cube"],
+    "ハードウェア仕様": ["hardware_components", "hardware_shape", "hardware_other"],
+    "通信仕様": [
+      "ble_communication_overview",
+      "ble_how_to_communicate",
+      {
+        "type": "subcategory",
+        "label": "各種機能",
+        "ids": [
+          "ble_id",
+          "ble_sensor",
+          "ble_button",
+          "ble_battery",
+          "ble_motor",
+          "ble_light",
+          "ble_sound",
+          "ble_configuration"
+        ]
+      }
+    ]
+  }
+}

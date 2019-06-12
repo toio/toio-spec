@@ -1,0 +1,57 @@
+version: 1
+rules:
+  - expected: toio
+  - expected: リポジトリ
+    pattern: レポジトリ
+  - expected: キューブ
+    pattern:
+      - /(?<!toio\s*)コア\s*キューブ/
+      - /toio\s*キューブ/
+    specs:
+      - from: コアキューブ
+        to: キューブ
+      - from: コア キューブ
+        to: キューブ
+      - from: コア　キューブ
+        to: キューブ
+      - from: toio キューブ
+        to: キューブ
+      - from: キューブ
+        to: キューブ
+      - from: toio コア キューブ
+        to: toio コア キューブ
+  - expected: センサー
+    pattern:
+      - /センサ(?!ー)/
+  - expected: 使いかたガイド
+    pattern:
+      - 使い方ガイド
+      - つかいかたガイド
+      - つかい方ガイド
+  - expected: パーセント
+    pattern:
+      - /%/
+      - ％
+  - expected: 度
+    pattern:
+      - /deg(ree)*/
+    specs:
+      - from: deg
+        to: 度
+      - from: degree
+        to: 度
+  - expected: ミリ秒
+    pattern:
+      - /(?<=[\d\s])ms\b/
+      - /(?<=[\d\s])msec\b/
+    specs:
+      - from: 160 ms
+        to: 160 ミリ秒
+      - from: 160 msec
+        to: 160 ミリ秒
+      - from: 160ms
+        to: 160ミリ秒
+      - from: 160msec
+        to: 160ミリ秒
+  - expected: とおり
+    pattern: 通り

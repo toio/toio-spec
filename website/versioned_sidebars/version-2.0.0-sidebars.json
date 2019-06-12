@@ -1,0 +1,31 @@
+{
+  "version-2.0.0-docs": {
+    "はじめに": [
+      "version-2.0.0-about",
+      "version-2.0.0-how_to_use_cube"
+    ],
+    "ハードウェア仕様": [
+      "version-2.0.0-hardware_components",
+      "version-2.0.0-hardware_shape",
+      "version-2.0.0-hardware_other"
+    ],
+    "通信仕様": [
+      "version-2.0.0-ble_communication_overview",
+      "version-2.0.0-ble_how_to_communicate",
+      {
+        "type": "subcategory",
+        "label": "各種機能",
+        "ids": [
+          "version-2.0.0-ble_id",
+          "version-2.0.0-ble_sensor",
+          "version-2.0.0-ble_button",
+          "version-2.0.0-ble_battery",
+          "version-2.0.0-ble_motor",
+          "version-2.0.0-ble_light",
+          "version-2.0.0-ble_sound",
+          "version-2.0.0-ble_configuration"
+        ]
+      }
+    ]
+  }
+}

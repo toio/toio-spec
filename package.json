@@ -1,0 +1,30 @@
+{
+  "name": "toio-spec",
+  "private": true,
+  "version": "0.0.0",
+  "description": "toio Core Cube Specification",
+  "main": "",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "lint": "textlint -f pretty-error docs/**",
+    "lint:fix": "textlint --fix docs/**",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toio/toio-spec.git"
+  },
+  "keywords": [
+    "toio"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "textlint": "^11.2.3",
+    "textlint-rule-no-dead-link": "^4.4.1",
+    "textlint-rule-preset-ja-technical-writing": "^4.0.0-1",
+    "textlint-rule-preset-jtf-style": "^2.3.3",
+    "textlint-rule-prh": "^5.2.0"
+  }
+}

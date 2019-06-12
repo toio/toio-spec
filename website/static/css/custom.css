@@ -1,0 +1,174 @@
+/**
+ * Copyright (c) 2019-present, Sony Interactive Entertainment Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/*
+ * general
+ */
+
+a,
+a:hover,
+a:focus {
+  color: #114cc5;
+}
+
+/*
+ * top page
+ */
+
+.homeContainer {
+  background: #878788;
+  padding: 4em 10px;
+}
+
+.projectTitle,
+.headerTitle,
+.headerTitle:hover,
+.headerTitle:focus {
+  color: white;
+}
+
+.imageAlignTop .blockImage {
+  max-width: 90%;
+}
+
+@media only screen and (min-width: 736px) {
+  .blockContent {
+    padding: 0 1.6em;
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  .gridBlock .blockElement.imageAlignTop {
+    margin-bottom: 80px;
+  }
+}
+
+.buttonDark {
+  border-color: white;
+  color: white;
+}
+
+.buttonDark:hover {
+  background-color: white;
+  color: #878788;
+}
+
+.blockContent a {
+  border: 1px solid #878788;
+  border-radius: 3px;
+  color: #878788;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2em;
+  padding: 10px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.blockContent a:hover {
+  background-color: #878788;
+  color: white;
+}
+
+/*
+ * sidebar
+ */
+
+.toc .toggleNav ul li.navListItemActive a,
+.toc .toggleNav ul li a:hover,
+.toc .toggleNav ul li a:focus {
+  color: #114cc5;
+}
+
+/*
+ * table
+ */
+
+table {
+  display: table;
+}
+
+table thead {
+  background: #878788;
+  color: white;
+}
+
+table th {
+  font-weight: inherit;
+}
+
+table thead tr:nth-child(2n) {
+  background-color: transparent;
+}
+
+/*
+ * code style
+ */
+
+code {
+  background-color: rgba(27, 31, 35, 0.1);
+}
+
+span[fixed] code {
+  background-color: rgba(27, 31, 35, 0.5);
+  color: white;
+}
+
+/*
+ * footer
+ */
+
+.nav-footer a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-footer a:hover {
+  color: white;
+}
+
+.nav-footer .license,
+.nav-footer .copyright {
+  margin: 0.5em auto 0;
+  max-width: 1080px;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: left;
+}
+
+.nav-footer .license p {
+  margin-bottom: 0;
+}
+
+.nav-footer .copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.nav-footer .copyright p {
+  margin-right: 3em;
+}
+
+@media only screen and (max-width: 735px) {
+  .nav-footer .license,
+  .nav-footer .copyright {
+    margin: 0 2em;
+  }
+
+  .nav-footer .license p {
+    margin-bottom: 1em;
+  }
+
+  .nav-footer .copyright {
+    flex-direction: column;
+  }
+
+  .nav-footer .copyright p {
+    margin-right: 0;
+  }
+}
