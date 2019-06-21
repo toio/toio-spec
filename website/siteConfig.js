@@ -49,7 +49,7 @@ const siteConfig = {
 
   repoUrl: 'https://github.com/toio/toio-spec',
 
-  gaTrackingId: 'UA-133660753-1',
+  gaTrackingId: 'UA-133660753-2',
   gaGtag: true,
 }
 
