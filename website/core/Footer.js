@@ -121,6 +121,9 @@ class Footer extends React.Component {
               Privacy Policy
             </a>
           </p>
+          <p>
+            <a href="trademark-notice">Trademark Notice</a>
+          </p>
         </section>
       </footer>
     )
