@@ -26,11 +26,11 @@ class Footer extends React.Component {
         <section className="sitemap">
           <div>
             <h5>Docs</h5>
-            <a href={this.docUrl('about.html', this.props.language)}>はじめに</a>
-            <a href={this.docUrl('hardware_components.html', this.props.language)}>
+            <a href={this.docUrl('about', this.props.language)}>はじめに</a>
+            <a href={this.docUrl('hardware_components', this.props.language)}>
               ハードウェアについて
             </a>
-            <a href={this.docUrl('ble_communication_overview.html', this.props.language)}>
+            <a href={this.docUrl('ble_communication_overview', this.props.language)}>
               通信仕様について
             </a>
           </div>
