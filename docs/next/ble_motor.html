@@ -1,11 +1,12 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>モーター · toio™コア キューブ 技術仕様</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;&lt;img src=&quot;/toio-spec/docs/assets/motor_cube_direction.svg&quot; alt=&quot;Cube Direction&quot;&gt;&lt;/p&gt;
-"/><meta name="docsearch:version" content="next"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="モーター · toio™コア キューブ 技術仕様"/><meta property="og:type" content="website"/><meta property="og:url" content="https://toio.github.io/toio-spec/"/><meta property="og:description" content="&lt;p&gt;&lt;img src=&quot;/toio-spec/docs/assets/motor_cube_direction.svg&quot; alt=&quot;Cube Direction&quot;&gt;&lt;/p&gt;
-"/><meta property="og:image" content="https://toio.github.io/toio-spec/img/social_image.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://toio.github.io/toio-spec/img/social_image.png"/><link rel="shortcut icon" href="/toio-spec/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-133660753-2"></script><script>
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments); }
-              gtag('js', new Date());
-              gtag('config', 'UA-133660753-2');
-            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/toio-spec/js/scrollSpy.js"></script><link rel="stylesheet" href="/toio-spec/css/main.css"/><script src="/toio-spec/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/toio-spec/"><h2 class="headerTitle">toio™コア キューブ 技術仕様</h2></a><a href="/toio-spec/versions"><h3>next</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a target="_self"></a></li><li class="siteNavGroupActive"><a href="/toio-spec/docs/next/about" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>各種機能</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">はじめに</h3><ul class=""><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/about">このサイトについて</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/how_to_use_cube">キューブの使い方</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">ハードウェア仕様</h3><ul class=""><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/hardware_components">各部の名前</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/hardware_shape">形状・サイズ</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/hardware_other">走行性能</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">通信仕様</h3><ul class=""><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_communication_overview">通信概要</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_how_to_communicate">機能の利用</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">各種機能</h4><ul><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_id">読み取りセンサー</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_sensor">モーションセンサー</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_button">ボタン</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_battery">バッテリー</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/toio-spec/docs/next/ble_motor">モーター</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_light">ランプ</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_sound">サウンド</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_configuration">設定</a></li></ul></div></ul></div></div></section></div><script>
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>モーター · toio™コア キューブ 技術仕様</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="![Cube Direction](/toio-spec/docs/assets/motor_cube_direction.svg)"/><meta name="docsearch:version" content="next"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="モーター · toio™コア キューブ 技術仕様"/><meta property="og:type" content="website"/><meta property="og:url" content="https://toio.github.io/toio-spec/"/><meta property="og:description" content="![Cube Direction](/toio-spec/docs/assets/motor_cube_direction.svg)"/><meta property="og:image" content="https://toio.github.io/toio-spec/img/social_image.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://toio.github.io/toio-spec/img/social_image.png"/><link rel="shortcut icon" href="/toio-spec/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-133660753-2', 'auto');
+              ga('send', 'pageview');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/toio-spec/js/scrollSpy.js"></script><link rel="stylesheet" href="/toio-spec/css/main.css"/><script src="/toio-spec/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/toio-spec/"><h2 class="headerTitle">toio™コア キューブ 技術仕様</h2></a><a href="/toio-spec/versions"><h3>next</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a target="_self"></a></li><li class="siteNavGroupActive"><a href="/toio-spec/docs/next/about" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>各種機能</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">はじめに</h3><ul class=""><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/about">このサイトについて</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/how_to_use_cube">🔄 キューブの使い方</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/how_to_update_cube">🔄 アップデートについて</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">ハードウェア仕様</h3><ul class=""><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/hardware_components">各部の名前</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/hardware_shape">形状・サイズ</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/hardware_other">走行性能</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">通信仕様</h3><ul class=""><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_communication_overview">通信概要</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_how_to_communicate">機能の利用</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">各種機能</h4><ul><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_id">読み取りセンサー</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_sensor">🔄 モーションセンサー</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_button">ボタン</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_battery">バッテリー</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/toio-spec/docs/next/ble_motor">🔄 モーター</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_light">ランプ</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_sound">サウンド</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/next/ble_configuration">🔄 設定</a></li></ul></div></ul></div></div></section></div><script>
             var coll = document.getElementsByClassName('collapsible');
             var checkActiveCategory = true;
             for (var i = 0; i < coll.length; i++) {
@@ -70,7 +71,7 @@
 </thead>
 <tbody>
 <tr><td>Characteristic UUID</td><td>10B20102-5B3B-4571-9508-CF3EFCD7BBAE</td></tr>
-<tr><td>Properties</td><td><a href="#書き込み操作">Write without response</a></td></tr>
+<tr><td>Properties</td><td><a href="#書き込み操作">Write without response</a>, <a href="#読み出し操作">Read</a>, <a href="#通知">Notify</a></td></tr>
 <tr><td>Descriptor</td><td>Motor Control</td></tr>
 </tbody>
 </table>
@@ -93,15 +94,14 @@
 </table>
 <h4><a class="anchor" aria-hidden="true" id="制御するモーターの-id"></a><a href="#制御するモーターの-id" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>制御するモーターの ID</h4>
 <p>制御するモーターの ID を指定します。左のモーターの ID が<code>1</code>で右のモーターの ID が<code>2</code>です。
-モーターの ID を指定する場所は二箇所ありますが、両方で同じ ID を指定するとエラーになり書き込み操作は無視されます。</p>
+モーターの ID を指定する場所は 2 箇所ありますが、両方で同じ ID を指定するとエラーになり書き込み操作は無視されます。</p>
 <h4><a class="anchor" aria-hidden="true" id="モーターの回転方向"></a><a href="#モーターの回転方向" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>モーターの回転方向</h4>
 <p>直前で指定した ID のモーターに対して回転方向を指定します。
 キューブの前進する方向が<code>1</code>で後退する方向が<code>2</code>です。</p>
-<h4><a class="anchor" aria-hidden="true" id="モーターの速度指示値"></a><a href="#モーターの速度指示値" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>モーターの速度指示値</h4>
+<h4><a class="anchor" aria-hidden="true" id="モーターの速度指示値"></a><a href="#モーターの速度指示値" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><em>モーターの速度指示値</em></h4>
 <p>直前で指定した ID のモーターに対して回転の速度を指定します。
 モーターの速度指示値は<code>0</code>以上<code>255</code>以下の範囲で指定できますが、モーターの速度指示値と実際のタイヤの回転速度の関係は以下のグラフのとおりです。</p>
-<p><img src="/toio-spec/docs/assets/motor_wheel_speed.svg" alt="Input Speed and Wheel Speed">
-s</p>
+<p><img src="/toio-spec/docs/assets/motor_wheel_speed_v2.1.0.svg" alt="Input Speed and Wheel Speed"></p>
 <h3><a class="anchor" aria-hidden="true" id="時間指定付きモーター制御"></a><a href="#時間指定付きモーター制御" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>時間指定付きモーター制御</h3>
 <p>以下に示す構成のデータを書き込むことで動かす時間を指定してモーターを制御できます。
 指定した時間を経過するとモーターは停止します。</p>
@@ -121,5 +121,238 @@ s</p>
 </tbody>
 </table>
 <h4><a class="anchor" aria-hidden="true" id="モーターの制御時間"></a><a href="#モーターの制御時間" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>モーターの制御時間</h4>
-<p>モーターを動かす時間を<code>0</code>以上<code>255</code>以下の範囲で指定します。<code>0</code>は「時間制限無し」を意味し、<a href="#モーター制御">モーター制御</a>と同様に次の書き込み操作が行われるまで、モーターは指定した速度で動きづづけます。<code>1</code>以上<code>255</code>以下の範囲では x10 ミリ秒モーターは動いたあと停止します。</p>
-</span></div></article></div><div class="docLastUpdate"><em>Last updated on 6/12/2019</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/toio-spec/docs/next/ble_battery"><span class="arrow-prev">← </span><span>バッテリー</span></a><a class="docs-next button" href="/toio-spec/docs/next/ble_light"><span>ランプ</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#書き込み操作">書き込み操作</a><ul class="toc-headings"><li><a href="#モーター制御">モーター制御</a></li><li><a href="#時間指定付きモーター制御">時間指定付きモーター制御</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><div><h5>Docs</h5><a href="/toio-spec/docs/about">はじめに</a><a href="/toio-spec/docs/hardware_components">ハードウェアについて</a><a href="/toio-spec/docs/ble_communication_overview">通信仕様について</a></div><div><h5>Community</h5><a href="/toio-spec/en/users.html">ユーザー＆ライブラリ</a><a href="https://stackoverflow.com/questions/tagged/toio" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://ja.stackoverflow.com/questions/tagged/toio" target="_blank" rel="noreferrer noopener">スタック・オーバーフロー</a></div><div><h5>More</h5><a href="https://toio.io" target="_blank" rel="noreferrer noopener">Official Web</a><a href="https://toio.io/platform/index.html" target="_blank" rel="noreferrer noopener">Official Web | toio 本体セット</a><a href="https://toio.io/platform/technology.html" target="_blank" rel="noreferrer noopener">Official Web | toio Technology</a><a href="https://github.com/toio/toio-spec" target="_blank" rel="noreferrer noopener">GitHub</a><a class="github-button" href="https://github.com/toio/toio-spec" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub" rel="noreferrer noopener">Star</a></div></section><section class="license"><p>The document is licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer noopener">Creative Commons Attribution 4.0 International License</a>.</p><p>The image is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank" rel="noreferrer noopener">Creative Commons Attribution-NoDerivatives 4.0 International License</a>.</p></section><section class="copyright"><p>Copyright © 2019 Sony Interactive Entertainment Inc.</p><p><a href="https://www.sie.com/website.html" target="_blank" rel="noreferrer noopener">Cookie Policy</a></p><p><a href="https://toio.io/privacy.html" target="_blank" rel="noreferrer noopener">Privacy Policy</a></p><p><a href="trademark-notice">Trademark Notice</a></p></section></footer></div></body></html>
+<p>モーターを動かす時間を<code>0</code>以上<code>255</code>以下の範囲で指定します。<code>0</code>は「時間制限無し」を意味し、次の書き込み操作が行われるまでモーターは指定した速度で動きづづけます。<code>1</code>以上<code>255</code>以下の範囲では x10 ミリ秒モーターは動いたあと停止します。</p>
+<h3><a class="anchor" aria-hidden="true" id="目標指定付きモーター制御"></a><a href="#目標指定付きモーター制御" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>目標指定付きモーター制御</strong></h3>
+<p>目標となる状態を指定してモーターを制御し、キューブを自律的に移動させることができます。設定する木法は以下の構成になっています。</p>
+<ul>
+<li>目標地点の Position ID の X 座標</li>
+<li>目標地点の Position ID の Y 座標</li>
+<li>目標地点でのキューブの角度 Θ</li>
+</ul>
+<p>キューブは中心の X 座標、Y 座標および角度が目標に到達するとモーターを停止し、<code>0x00: 正常終了</code>の応答を返します。もしくは、タイムアウト等のエラーが発生した場合は対応するエラーの応答を返します。応答については<a href="#目標指定付きモーター制御の応答">目標指定付きモーター制御の応答</a>を参照してください。</p>
+<table>
+<thead>
+<tr><th>データ位置</th><th>タイプ</th><th>内容</th><th>例</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>UInt8</td><td>制御の種類</td><td><span fixed><code>0x03</code></span>（目標指定付きモーター制御）</td></tr>
+<tr><td>1</td><td>UInt8</td><td>制御識別値</td><td><code>0x00</code></td></tr>
+<tr><td>2</td><td>UInt8</td><td>タイムアウト時間</td><td><code>0x05</code>（5 秒）</td></tr>
+<tr><td>3</td><td>UInt8</td><td>移動タイプ</td><td><code>0x00</code>（回転しながら移動）</td></tr>
+<tr><td>4</td><td>UInt8</td><td>モーターの最大速度指示値</td><td><code>0x50</code>（80）</td></tr>
+<tr><td>5</td><td>UInt8</td><td>モーターの速度変化タイプ</td><td><code>0x00</code>（速度一定）</td></tr>
+<tr><td>6</td><td>UInt8</td><td>Reserved</td><td><span fixed><code>0x00</code></span></td></tr>
+<tr><td>7</td><td>UInt16</td><td>目標地点の X 座標値</td><td><code>0x02bc</code>（700）</td></tr>
+<tr><td>9</td><td>UInt16</td><td>目標地点の Y 座標値</td><td><code>0x0182</code>（386）</td></tr>
+<tr><td>11</td><td>UInt16</td><td>目標地点でのキューブの角度 Θ</td><td><code>0x005a</code>（90 度）</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="制御識別値"></a><a href="#制御識別値" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>制御識別値</h4>
+<p>対応する<a href="#目標指定付きモーター制御の応答">目標指定付きモーター制御の応答</a>を識別するための値です。ここで設定した値が対応する応答にも含まれます。これによって連続して書き込み操作をするときに対応する応答を識別できます。値の範囲は<code>0</code>以上<code>255</code>以下の範囲で自由に設定できます。</p>
+<h4><a class="anchor" aria-hidden="true" id="タイムアウト時間"></a><a href="#タイムアウト時間" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>タイムアウト時間</h4>
+<p>ここで設定した時間が経過してもキューブが目標地点に到達していない場合、キューブは動作を停止し<code>0x01: タイムアウト</code>の応答を返します。
+値は<code>0</code>以上<code>255</code>以下の範囲で指定します。単位は秒です。<code>0</code>のみ例外的に 10 秒になります。タイムアウト無しの設定はできません。</p>
+<h4><a class="anchor" aria-hidden="true" id="移動タイプ"></a><a href="#移動タイプ" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>移動タイプ</h4>
+<p>目標地点までのキューブの移動方法を以下の 3 つのタイプから 1 つ選択します。移動せずその場で回転する場合はどれを選んでも同じ動きになります。</p>
+<table>
+<thead>
+<tr><th>値</th><th>移動方法の説明</th></tr>
+</thead>
+<tbody>
+<tr><td><code>0</code></td><td>回転しながら移動</td></tr>
+<tr><td><code>1</code></td><td>回転しながら移動（後退なし）</td></tr>
+<tr><td><code>2</code></td><td>回転してから移動</td></tr>
+</tbody>
+</table>
+<p><img src="/toio-spec/docs/assets/motor_movement_type.svg" alt="Movement Type"></p>
+<p align="center">移動タイプ毎の動き方: 左から<code>0</code>, <code>1</code>, <code>2</code></p>
+<h4><a class="anchor" aria-hidden="true" id="モーターの最大速度指示値"></a><a href="#モーターの最大速度指示値" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>モーターの最大速度指示値</h4>
+<p>キューブが動作可能な最大の速度指示値を指定します。キューブは指定された以上の速度は出さずに動きます。
+値の範囲やタイヤの回転速度との関係は<a href="#モーターの速度指示値">モーターの速度指示値</a>と同じです。
+ただし<code>8</code>未満（タイヤ回転速度 0 の範囲）を指定した場合、命令は破棄され<code>0x06: 非サポート</code>の応答を返します。</p>
+<h4><a class="anchor" aria-hidden="true" id="モーターの速度変化タイプ"></a><a href="#モーターの速度変化タイプ" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>モーターの速度変化タイプ</h4>
+<p>目標地点までのキューブの移動速度の変化を以下の 4 つのタイプから 1 つ選択します。</p>
+<table>
+<thead>
+<tr><th>値</th><th>速度変化タイプ</th></tr>
+</thead>
+<tbody>
+<tr><td><code>0x00</code></td><td>速度一定</td></tr>
+<tr><td><code>0x01</code></td><td>目標地点まで徐々に加速</td></tr>
+<tr><td><code>0x02</code></td><td>目標地点まで徐々に減速</td></tr>
+<tr><td><code>0x03</code></td><td>中間地点まで徐々に加速し、そこから目標地点まで減速</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="目標地点の-x-座標-y-座標"></a><a href="#目標地点の-x-座標-y-座標" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>目標地点の X 座標・ Y 座標</h4>
+<p>目標地点の X 座標と Y 座標を指定します。値の範囲はどちらも<code>0x0000</code>以上<code>0xffff</code>以下で、<code>0xffff</code>のみ「書き込み操作時と同じ」という意味になります。Position ID の印刷と座標の関係については、<a href="/toio-spec/docs/next/ble_id#座標-x-座標-y-座標">読み取りセンサー / Position ID / 座標（X 座標、Y 座標）</a>を参照してください。</p>
+<h4><a class="anchor" aria-hidden="true" id="目標地点でのキューブの角度-θ"></a><a href="#目標地点でのキューブの角度-θ" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>目標地点でのキューブの角度 Θ</h4>
+<p>キューブは目標の X 座標・Y 座標に到達した後、ここで設定した角度を目標として回転します。値は 16bit のうち下位 13bit は<code>0x0000</code>以上<code>0x1ffff</code>以下の範囲で角度を指定します。また上位 3bit は以下のいずれかを指定します。これによって下位 13bit の表す角度の意味と動き方が変わります。</p>
+<table>
+<thead>
+<tr><th>上位 3bit の値</th><th>角度の意味</th><th>回転方向</th></tr>
+</thead>
+<tbody>
+<tr><td><code>0x00</code></td><td>絶対角度</td><td>回転量が少ない方向</td></tr>
+<tr><td><code>0x01</code></td><td>絶対角度</td><td>正方向</td></tr>
+<tr><td><code>0x02</code></td><td>絶対角度</td><td>負方向</td></tr>
+<tr><td><code>0x03</code></td><td>相対角度</td><td>正方向</td></tr>
+<tr><td><code>0x04</code></td><td>相対角度</td><td>負方向</td></tr>
+<tr><td><code>0x05</code></td><td>角度指定なし</td><td>回転しない</td></tr>
+<tr><td><code>0x06</code></td><td>書き込み操作時と同じ</td><td>回転量が少ない方向</td></tr>
+</tbody>
+</table>
+<p>「絶対角度」の場合、角度は Position ID の上での向きそのものを意味します。また「相対角度」の場合、角度はキューブが目標地点に到着したときの状態を基準とした相対的ものを意味します。<code>0x05: 角度指定なし</code>の場合は下位 13bit の情報は無視され、目標地点の X 座標・Y 座標に到達したら回転せずモーター制御を終了します。<code>0x06: 書き込み操作と同じ</code>の場合は下位 13bit の情報は無視され、書き込み操作と同じ向きになるように回転します。</p>
+<p>Position ID 上での角度や回転方向については<a href="/toio-spec/docs/next/ble_id#角度">読み取りセンサー / Position ID / 角度</a>を参照してください。</p>
+<h3><a class="anchor" aria-hidden="true" id="複数目標指定付きモーター制御"></a><a href="#複数目標指定付きモーター制御" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>複数目標指定付きモーター制御</strong></h3>
+<p><a href="#目標指定付きモーター制御">目標指定付きモーター制御</a>を拡張して、複数の目標を指定してモーターを制御できます。例では 3 つの目標を順にたどります。キューブは最後の目標に到達するとモーターを停止し、<code>0x00: 正常終了</code>の応答を返します。もしくは、タイムアウト等のエラーが発生した場合は対応するエラーの応答を返します。応答については<a href="#複数目標指定付きモーター制御の応答">複数目標指定付きモーター制御の応答</a>を参照してください。</p>
+<table>
+<thead>
+<tr><th>データ位置</th><th>タイプ</th><th>内容</th><th>例</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>UInt8</td><td>制御の種類</td><td><span fixed><code>0x04</code></span>（複数目標指定付きモーター制御）</td></tr>
+<tr><td>1</td><td>UInt8</td><td>制御識別値</td><td><code>0x00</code></td></tr>
+<tr><td>2</td><td>UInt8</td><td>タイムアウト時間</td><td><code>0x05</code>（5 秒）</td></tr>
+<tr><td>3</td><td>UInt8</td><td>移動タイプ</td><td><code>0x00</code>（回転しながら移動）</td></tr>
+<tr><td>4</td><td>UInt8</td><td>モーターの最大速度指示値</td><td><code>0x50</code>（80）</td></tr>
+<tr><td>5</td><td>UInt8</td><td>モーターの速度変化タイプ</td><td><code>0x00</code>（速度一定）</td></tr>
+<tr><td>6</td><td>UInt8</td><td>Reserved</td><td><span fixed><code>0x00</code></span></td></tr>
+<tr><td>7</td><td>UInt8</td><td>書き込み操作の追加設定</td><td><code>0x01</code>（追加）</td></tr>
+<tr><td>8</td><td>UInt16</td><td>目標地点 1 の X 座標値</td><td><code>0x0064</code>（100）</td></tr>
+<tr><td>10</td><td>UInt16</td><td>目標地点 1 の Y 座標値</td><td><code>0x0064</code>（100）</td></tr>
+<tr><td>12</td><td>UInt16</td><td>目標地点 1 でのキューブの角度 Θ</td><td><code>0x0000</code>（0 度）</td></tr>
+<tr><td>14</td><td>UInt16</td><td>目標地点 2 の X 座標値</td><td><code>0x00c8</code>（200）</td></tr>
+<tr><td>16</td><td>UInt16</td><td>目標地点 2 の Y 座標値</td><td><code>0x0064</code>（100）</td></tr>
+<tr><td>18</td><td>UInt16</td><td>目標地点 2 でのキューブの角度 Θ</td><td><code>0x005f</code>（90 度）</td></tr>
+<tr><td>20</td><td>UInt16</td><td>目標地点 3 の X 座標値</td><td><code>0x00c8</code>（200）</td></tr>
+<tr><td>22</td><td>UInt16</td><td>目標地点 3 の Y 座標値</td><td><code>0x00c8</code>（200）</td></tr>
+<tr><td>24</td><td>UInt16</td><td>目標地点 3 でのキューブの角度 Θ</td><td><code>0x00b4</code>（180 度）</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="データ構造"></a><a href="#データ構造" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>データ構造</h4>
+<p>この書き込み操作のデータは指定する目標の数によって長さが可変な構造になっています。上記の例のようにデータの後ろに目標の情報を「X 座標」「Y 座標」「キューブの角度」の順に並べることで、最大で 29 個の目標を指定できます。目標の情報がない場合、または 29 個を超える場合はエラーとなり、書き込み操作は破棄されます。目標が多くなるにつれてデータサイズも大きくなります。データサイズの大きさによっては BLE の帯域の制約を受けて遅延することがあるのでご注意ください。</p>
+<h4><a class="anchor" aria-hidden="true" id="制御識別値-1"></a><a href="#制御識別値-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>制御識別値</h4>
+<p>対応する<a href="#複数目標指定付きモーター制御の応答">複数目標指定付きモーター制御の応答</a>を識別するための値です。ここで設定した値が対応する応答にも含まれます。これによって連続して書き込み操作をするときに対応する応答を識別できます。値の範囲は<code>0</code>以上<code>255</code>以下の範囲で自由に設定できます。</p>
+<h4><a class="anchor" aria-hidden="true" id="タイムアウト時間-1"></a><a href="#タイムアウト時間-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>タイムアウト時間</h4>
+<p>ここで設定した時間が経過してもキューブが目標地点に到達していない場合、キューブは動作を停止し<code>0x01: タイムアウト</code>の応答を返します。以降の目標への移動は行いません。1 つの目標に到達するとタイマーはリセットされ、次の目標までのタイムアウトを計算を始めます。値は<code>0</code>以上<code>255</code>以下の範囲で指定します。単位は秒です。<code>0</code>のみ例外的に 10 秒になります。タイムアウト無しの設定はできません。</p>
+<h4><a class="anchor" aria-hidden="true" id="移動タイプ-モーターの最大速度指示値"></a><a href="#移動タイプ-モーターの最大速度指示値" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>移動タイプ・モーターの最大速度指示値</h4>
+<p>これらに関しては<a href="#目標指定付きモーター制御">目標指定付きモーター制御</a>と同じです。</p>
+<h4><a class="anchor" aria-hidden="true" id="モーターの速度変化タイプ-1"></a><a href="#モーターの速度変化タイプ-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>モーターの速度変化タイプ</h4>
+<p>設定する値の範囲や意味は<a href="#目標指定付きモーター制御">目標指定付きモーター制御</a>と同じですが、全ての目標を通る経路に対して適用されます。</p>
+<h4><a class="anchor" aria-hidden="true" id="書き込み操作の追加設定"></a><a href="#書き込み操作の追加設定" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>書き込み操作の追加設定</h4>
+<p>書き込み操作を追加した場合の動作を設定する値です。<code>0x00: 上書き</code>と<code>0x01: 追加</code>のどちらかを指定します。</p>
+<p>通常、モーター制御を実行中に別のモーター制御の書き込み操作をすると実行中の制御を上書き（中断・破棄）し、新たに書き込んだ制御の実行を始めます。<code>0x00: 上書き</code>を指定するとこの動作になります。</p>
+<p>一方、<code>0x01: 追加</code>を指定した場合は以下の 2 つの条件を満たす場合に限り<strong>1 回分</strong>の書き込み操作を保留しておき、実行中のモーター制御が完了した後に自動的に実行を開始できます。</p>
+<ul>
+<li>実行中のモーター制御が<strong>複数目標指定付きモーター制御</strong>である</li>
+<li>既に追加した複数目標指定付きモーター制御が<strong>ない</strong></li>
+</ul>
+<p><code>0x01: 追加</code>を指定しても、実行中のモーター制御が複数目標指定付きモーター制御<strong>でない</strong>場合は<code>0x00: 上書き</code>と同じ動作になり、実行中のモーター制御を上書き（中断・破棄）します。また、既に追加した複数目標指定付きモーター制御が存在する場合は書き込み操作が破棄され、<a href="#複数目標指定付きモーター制御の応答">複数目標指定付きモーター制御の応答</a>において<code>0x07: 書き込み操作の追加不可</code>の応答を返します。</p>
+<h4><a class="anchor" aria-hidden="true" id="目標地点の-x-座標-y-座標-1"></a><a href="#目標地点の-x-座標-y-座標-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>目標地点の X 座標・Y 座標</h4>
+<p>設定する値の範囲や意味は基本的に<a href="#目標指定付きモーター制御">目標指定付きモーター制御</a>と同じです。ただし、2 つ目以降の目標地点において<code>0xffff</code>は「書き込み操作時と同じ」ではなく「1 つ前の目標地点での設定と同じ」になります。</p>
+<h4><a class="anchor" aria-hidden="true" id="目標地点でのキューブの角度-θ-1"></a><a href="#目標地点でのキューブの角度-θ-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>目標地点でのキューブの角度 Θ</h4>
+<p>設定する値の範囲や意味は基本的に<a href="#目標指定付きモーター制御">目標指定付きモーター制御</a>と同じです。ただし、2 つ目以降の目標地点において上位 3bit の<code>0x06</code>は「書き込み操作時と同じ」ではなく「1 つ前の目標地点での設定と同じ」になります。</p>
+<h3><a class="anchor" aria-hidden="true" id="加速度指定付きモーター制御"></a><a href="#加速度指定付きモーター制御" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>加速度指定付きモーター制御</strong></h3>
+<p>以下に示す構成のデータを書き込むことでキューブの加速度を指定してモーターを制御できます。また、モーターそれぞれの速度を指定するのではなくキューブとしての並進速度や回転速度を指定して制御できます。例ではゆっくり弧を描きながら 1 秒間移動します。</p>
+<table>
+<thead>
+<tr><th>データ位置</th><th>タイプ</th><th>内容</th><th>例</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>UInt8</td><td>制御の種類</td><td><span fixed><code>0x05</code></span>（加速度指定付きモーター制御）</td></tr>
+<tr><td>1</td><td>UInt8</td><td>キューブの並進速度</td><td><code>0x32</code>（50）</td></tr>
+<tr><td>2</td><td>UInt8</td><td>キューブの加速度</td><td><code>0x05</code>（5）</td></tr>
+<tr><td>3</td><td>UInt16</td><td>キューブの向きの回転速度</td><td><code>0x000F</code>（15 度/秒）</td></tr>
+<tr><td>5</td><td>UInt8</td><td>キューブの向きの回転方向</td><td><code>0x00</code>（正方向）</td></tr>
+<tr><td>6</td><td>UInt8</td><td>キューブの進行方向</td><td><code>0x00</code>（前進）</td></tr>
+<tr><td>7</td><td>UInt8</td><td>優先指定</td><td><code>0x00</code>（並進速度優先）</td></tr>
+<tr><td>8</td><td>UInt8</td><td>制御時間</td><td><code>0x64</code>（1 秒）</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="キューブの並進速度"></a><a href="#キューブの並進速度" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>キューブの並進速度</h4>
+<p>キューブが進行方向に対して進む速度を指定します。値の範囲やタイヤの回転速度との関係は<a href="#モーターの速度指示値">モーターの速度指示値</a>と同じです。</p>
+<h4><a class="anchor" aria-hidden="true" id="キューブの加速度"></a><a href="#キューブの加速度" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>キューブの加速度</h4>
+<p>100 ミリ秒ごとの速度の増加分（または減少分）を指定します。キューブの速度が「キューブの並進速度」で指定した速度に到達すると加速を終了します。値は<code>0</code>以上<code>255</code>以下の範囲で指定でき、<code>0</code>の場合は書き込み操作をすると直ちに「キューブの並進速度」で指定した速度になります。また、この設定は加速度指定付きモーター制御を連続して書き込む場合のみ有効です。キューブがその他のモーター制御で動いている場合は無視され、<code>0</code>を設定したときと同様に書き込み操作をすると直ちに「キューブの並進速度」で指定した速度になります。</p>
+<h4><a class="anchor" aria-hidden="true" id="キューブの向きの回転速度"></a><a href="#キューブの向きの回転速度" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>キューブの向きの回転速度</h4>
+<p>キューブの向きの回転速度を指定します。値は<code>0x00</code>以上<code>0xffff</code>以下の範囲で指定でき、単位は[度/秒]です。</p>
+<h4><a class="anchor" aria-hidden="true" id="キューブの向きの回転方向"></a><a href="#キューブの向きの回転方向" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>キューブの向きの回転方向</h4>
+<p>キューブの向きの回転方向を指定します。<code>0</code>が正方向で<code>1</code>が負方向です。Position ID 上での角度や回転方向については<a href="/toio-spec/docs/next/ble_id#角度">読み取りセンサー / Position ID / 角度</a>を参照してください。</p>
+<h4><a class="anchor" aria-hidden="true" id="キューブの進行方向"></a><a href="#キューブの進行方向" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>キューブの進行方向</h4>
+<p>キューブの進行方向を指定します。<code>0</code>が前進する方向で<code>1</code>が後退する方向です。</p>
+<h4><a class="anchor" aria-hidden="true" id="優先指定"></a><a href="#優先指定" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>優先指定</h4>
+<p>並進速度と回転速度の組み合わせによって、モーターに指定できる速度指示値の範囲を超えてしまうことがあります。その場合に並進速度と回転速度のどちらを優先するかを指定します。<code>0</code>は並進速度を優先し、回転速度を調整します。<code>1</code>は回転速度を優先し、並進速度を調整します。</p>
+<h4><a class="anchor" aria-hidden="true" id="制御時間"></a><a href="#制御時間" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>制御時間</h4>
+<p>モーターを動かす時間を<code>0</code>以上<code>255</code>以下の範囲で指定します。<code>0</code>は「時間制限無し」を意味し、次の書き込み操作が行われるまでモーターは指定した速度で動きづづけます。<code>1</code>以上<code>255</code>以下の範囲では x10 ミリ秒モーターは動いたあと停止します。</p>
+<h2><a class="anchor" aria-hidden="true" id="読み出し操作-通知"></a><a href="#読み出し操作-通知" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>読み出し操作 / 通知</h2>
+<p>この特性は BLE セントラルに情報を通知します。通知される情報は読み出し操作でも取得可能で、以下のようにデータの先頭の値で内容を判別できます。</p>
+<table>
+<thead>
+<tr><th>先頭データ</th><th>情報</th></tr>
+</thead>
+<tbody>
+<tr><td><code>0x83</code></td><td><a href="#目標指定付きモーター制御の応答">目標指定付きモーター制御の応答</a></td></tr>
+<tr><td><code>0x84</code></td><td><a href="#複数目標指定付きモーター制御の応答">複数目標指定付きモーター制御の応答</a></td></tr>
+</tbody>
+</table>
+<h3><a class="anchor" aria-hidden="true" id="目標指定付きモーター制御の応答"></a><a href="#目標指定付きモーター制御の応答" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>目標指定付きモーター制御の応答</strong></h3>
+<p><a href="#目標指定付きモーター制御">目標指定付きモーター制御</a>が書き込まれた後、必ず 1 回だけ以下に示す構成のデータが応答として通知されます。</p>
+<table>
+<thead>
+<tr><th>データ位置</th><th>タイプ</th><th>内容</th><th>例</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>UInt8</td><td>制御の種類</td><td><span fixed><code>0x83</code></span>（目標指定付きモーター制御の応答）</td></tr>
+<tr><td>1</td><td>UInt8</td><td>制御識別値</td><td><code>0x00</code></td></tr>
+<tr><td>2</td><td>UInt8</td><td>応答内容</td><td><code>0x00</code>（正常終了）</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="制御識別値-2"></a><a href="#制御識別値-2" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>制御識別値</h4>
+<p>対応する<a href="#目標指定付きモーター制御">目標指定付きモーター制御</a>で設定した値です。</p>
+<h4><a class="anchor" aria-hidden="true" id="応答内容"></a><a href="#応答内容" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>応答内容</h4>
+<p>応答内容は書き込んだデータ内容や実行結果に応じて以下のいずれかになります。</p>
+<table>
+<thead>
+<tr><th>値</th><th>内容</th><th>状態</th></tr>
+</thead>
+<tbody>
+<tr><td><code>0x00</code></td><td>正常終了</td><td>目標に到達したとき。<br/>モーターは停止する。</td></tr>
+<tr><td><code>0x01</code></td><td>タイムアウト</td><td>指定したタイムアウト時間を経過したとき。<br/>モーターは停止する。</td></tr>
+<tr><td><code>0x02</code></td><td>toio ID missed</td><td>toio ID がない場所にキューブが置かれたとき。<br/>モーターは停止する。</td></tr>
+<tr><td><code>0x03</code></td><td>不正なパラメーターの組み合わせ</td><td>座標 X, 座標 Y, 角度の全てが<code>現在と同じ</code>だったとき。<br/>書き込み操作は破棄される。</td></tr>
+<tr><td><code>0x04</code></td><td>不正な状態</td><td>電源を切られたとき。<br/>応答が通知された後、電源が切れる。</td></tr>
+<tr><td><code>0x05</code></td><td>他の書き込み受付</td><td>目標指定付きモーター制御以外のモーター制御が書き込まれた時。<br/>実行中のモーター制御は終了し、新たに書き込まれたモーター制御が実行される。</td></tr>
+<tr><td><code>0x06</code></td><td>非サポート</td><td>指定したモーターの最大速度指示値が<code>8</code>未満のとき。<br/>書き込み操作は破棄される。</td></tr>
+</tbody>
+</table>
+<h3><a class="anchor" aria-hidden="true" id="複数目標指定付きモーター制御の応答"></a><a href="#複数目標指定付きモーター制御の応答" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>複数目標指定付きモーター制御の応答</strong></h3>
+<p><a href="#複数目標指定付きモーター制御">複数目標指定付きモーター制御</a>が書き込まれた後、必ず 1 回だけ以下に示す構成のデータが応答として通知されます。</p>
+<table>
+<thead>
+<tr><th>データ位置</th><th>タイプ</th><th>内容</th><th>例</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>UInt8</td><td>制御の種類</td><td><span fixed><code>0x84</code></span>（複数目標指定付きモーター制御の応答）</td></tr>
+<tr><td>1</td><td>UInt8</td><td>制御識別値</td><td><code>0x00</code></td></tr>
+<tr><td>2</td><td>UInt8</td><td>応答内容</td><td><code>0x00</code>（正常終了）</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="制御識別値-3"></a><a href="#制御識別値-3" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>制御識別値</h4>
+<p>対応する<a href="#複数目標指定付きモーター制御">複数目標指定付きモーター制御</a>で設定した値です。</p>
+<h4><a class="anchor" aria-hidden="true" id="応答内容-1"></a><a href="#応答内容-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>応答内容</h4>
+<p>応答内容は書き込んだデータ内容や実行結果に応じて以下のいずれかになります。</p>
+<table>
+<thead>
+<tr><th>値</th><th>内容</th><th>状態</th></tr>
+</thead>
+<tbody>
+<tr><td><code>0x00</code></td><td>正常終了</td><td>目標に到達したとき。<br/>モーターは停止する。</td></tr>
+<tr><td><code>0x01</code></td><td>タイムアウト</td><td>指定したタイムアウト時間を経過したとき。<br/>モーターは停止する。</td></tr>
+<tr><td><code>0x02</code></td><td>toio ID missed</td><td>toio ID がない場所にキューブが置かれたとき。<br/>モーターは停止する。</td></tr>
+<tr><td><code>0x03</code></td><td>不正なパラメーターの組み合わせ</td><td>座標 X, 座標 Y, 角度の全てが<code>現在と同じ</code>だったとき。<br/>書き込み操作は破棄される。</td></tr>
+<tr><td><code>0x04</code></td><td>不正な状態</td><td>電源を切られたとき。<br/>応答が通知された後、電源が切れる。</td></tr>
+<tr><td><code>0x05</code></td><td>他の書き込み受付</td><td>複数目標指定付きモーター制御以外のモーター制御が書き込まれた時。<br/>実行中のモーター制御は終了し、新たに書き込まれたモーター制御が実行される。</td></tr>
+<tr><td><code>0x06</code></td><td>非サポート</td><td>指定したモーターの最大速度指示値が<code>8</code>未満のとき。<br/>書き込み操作は破棄される。</td></tr>
+<tr><td><code>0x07</code></td><td>書き込み操作の追加不可</td><td>書き込み操作の追加ができないとき<br/>書き込み操作は破棄される。</td></tr>
+</tbody>
+</table>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2019-6-12</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/toio-spec/docs/next/ble_battery"><span class="arrow-prev">← </span><span>バッテリー</span></a><a class="docs-next button" href="/toio-spec/docs/next/ble_light"><span>ランプ</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#書き込み操作">書き込み操作</a><ul class="toc-headings"><li><a href="#モーター制御">モーター制御</a></li><li><a href="#時間指定付きモーター制御">時間指定付きモーター制御</a></li><li><a href="#目標指定付きモーター制御"><strong>目標指定付きモーター制御</strong></a></li><li><a href="#複数目標指定付きモーター制御"><strong>複数目標指定付きモーター制御</strong></a></li><li><a href="#加速度指定付きモーター制御"><strong>加速度指定付きモーター制御</strong></a></li></ul></li><li><a href="#読み出し操作-通知">読み出し操作 / 通知</a><ul class="toc-headings"><li><a href="#目標指定付きモーター制御の応答"><strong>目標指定付きモーター制御の応答</strong></a></li><li><a href="#複数目標指定付きモーター制御の応答"><strong>複数目標指定付きモーター制御の応答</strong></a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><div><h5>Docs</h5><a href="/toio-spec/docs/about">はじめに</a><a href="/toio-spec/docs/hardware_components">ハードウェアについて</a><a href="/toio-spec/docs/ble_communication_overview">通信仕様について</a></div><div><h5>Community</h5><a href="/toio-spec/en/users.html">ユーザー＆ライブラリ</a><a href="https://stackoverflow.com/questions/tagged/toio" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://ja.stackoverflow.com/questions/tagged/toio" target="_blank" rel="noreferrer noopener">スタック・オーバーフロー</a></div><div><h5>More</h5><a href="https://toio.io" target="_blank" rel="noreferrer noopener">Official Web</a><a href="https://toio.io/platform/index.html" target="_blank" rel="noreferrer noopener">Official Web | toio 本体セット</a><a href="https://toio.io/platform/technology.html" target="_blank" rel="noreferrer noopener">Official Web | toio のテクノロジー</a><a href="https://note.toio.io/" target="_blank" rel="noreferrer noopener">toio 公式 note</a><a href="https://github.com/toio/toio-spec" target="_blank" rel="noreferrer noopener">GitHub</a><a class="github-button" href="https://github.com/toio/toio-spec" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub" rel="noreferrer noopener">Star</a></div></section><section class="license"><p>The document is licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer noopener">Creative Commons Attribution 4.0 International License</a>.</p><p>The image is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank" rel="noreferrer noopener">Creative Commons Attribution-NoDerivatives 4.0 International License</a>.</p></section><section class="copyright"><p>Copyright © 2019 Sony Interactive Entertainment Inc.</p><p><a href="https://www.sie.com/website.html" target="_blank" rel="noreferrer noopener">Cookie Policy</a></p><p><a href="https://toio.io/privacy.html" target="_blank" rel="noreferrer noopener">Privacy Policy</a></p><p><a href="trademark-notice">Trademark Notice</a></p></section></footer></div></body></html>

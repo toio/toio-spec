@@ -1,0 +1,125 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>モーター · toio™コア キューブ 技術仕様</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="![Cube Direction](/toio-spec/docs/assets/motor_cube_direction.svg)"/><meta name="docsearch:version" content="2.0.0"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="モーター · toio™コア キューブ 技術仕様"/><meta property="og:type" content="website"/><meta property="og:url" content="https://toio.github.io/toio-spec/"/><meta property="og:description" content="![Cube Direction](/toio-spec/docs/assets/motor_cube_direction.svg)"/><meta property="og:image" content="https://toio.github.io/toio-spec/img/social_image.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://toio.github.io/toio-spec/img/social_image.png"/><link rel="shortcut icon" href="/toio-spec/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-133660753-2', 'auto');
+              ga('send', 'pageview');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/toio-spec/js/scrollSpy.js"></script><link rel="stylesheet" href="/toio-spec/css/main.css"/><script src="/toio-spec/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/toio-spec/"><h2 class="headerTitle">toio™コア キューブ 技術仕様</h2></a><a href="/toio-spec/versions"><h3>2.0.0</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a target="_self"></a></li><li class="siteNavGroupActive"><a href="/toio-spec/docs/2.0.0/about" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>各種機能</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">はじめに</h3><ul class=""><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.0.0/about">このサイトについて</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.0.0/how_to_use_cube">キューブの使い方</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">ハードウェア仕様</h3><ul class=""><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.0.0/hardware_components">各部の名前</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.0.0/hardware_shape">形状・サイズ</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.0.0/hardware_other">走行性能</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">通信仕様</h3><ul class=""><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.0.0/ble_communication_overview">通信概要</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.0.0/ble_how_to_communicate">機能の利用</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">各種機能</h4><ul><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.0.0/ble_id">読み取りセンサー</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.0.0/ble_sensor">モーションセンサー</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.0.0/ble_button">ボタン</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.0.0/ble_battery">バッテリー</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/toio-spec/docs/2.0.0/ble_motor">モーター</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.0.0/ble_light">ランプ</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.0.0/ble_sound">サウンド</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.0.0/ble_configuration">設定</a></li></ul></div></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">モーター</h1></header><article><div><span><p><img src="/toio-spec/docs/assets/motor_cube_direction.svg" alt="Cube Direction"></p>
+<p>キューブは 2 つのモーターを持ち、それぞれが左右の車輪につながっています（参考：<a href="/toio-spec/docs/2.0.0/hardware_components">各部の名前</a>）。
+これらのモーターは以下の特性（characteristic）を使うことで制御できます。</p>
+<table>
+<thead>
+<tr><th>プロパティ</th><th>値</th></tr>
+</thead>
+<tbody>
+<tr><td>Characteristic UUID</td><td>10B20102-5B3B-4571-9508-CF3EFCD7BBAE</td></tr>
+<tr><td>Properties</td><td><a href="#書き込み操作">Write without response</a></td></tr>
+<tr><td>Descriptor</td><td>Motor Control</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="書き込み操作"></a><a href="#書き込み操作" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>書き込み操作</h2>
+<h3><a class="anchor" aria-hidden="true" id="モーター制御"></a><a href="#モーター制御" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>モーター制御</h3>
+<p>以下に示す構成のデータを書き込むことでモーターを制御できます。 次の書き込み操作が行われるまで、モーターは指定した速度で動きづづけます。</p>
+<table>
+<thead>
+<tr><th>データ位置</th><th>タイプ</th><th>内容</th><th>例</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>UInt8</td><td>制御の種類</td><td><span fixed><code>0x01</code></span>（モーター制御）</td></tr>
+<tr><td>1</td><td>UInt8</td><td>制御するモーターの ID</td><td><code>0x01</code>（左）</td></tr>
+<tr><td>2</td><td>UInt8</td><td>モーターの回転方向</td><td><code>0x01</code>（前）</td></tr>
+<tr><td>3</td><td>UInt8</td><td>モーターの速度指示値</td><td><code>0x64</code>（100）</td></tr>
+<tr><td>4</td><td>UInt8</td><td>制御するモーターの ID</td><td><code>0x02</code>（右）</td></tr>
+<tr><td>5</td><td>UInt8</td><td>モーターの回転方向</td><td><code>0x02</code>（後ろ）</td></tr>
+<tr><td>6</td><td>UInt8</td><td>モーターの速度指示値</td><td><code>0x14</code>（20）</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="制御するモーターの-id"></a><a href="#制御するモーターの-id" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>制御するモーターの ID</h4>
+<p>制御するモーターの ID を指定します。左のモーターの ID が<code>1</code>で右のモーターの ID が<code>2</code>です。
+モーターの ID を指定する場所は二箇所ありますが、両方で同じ ID を指定するとエラーになり書き込み操作は無視されます。</p>
+<h4><a class="anchor" aria-hidden="true" id="モーターの回転方向"></a><a href="#モーターの回転方向" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>モーターの回転方向</h4>
+<p>直前で指定した ID のモーターに対して回転方向を指定します。
+キューブの前進する方向が<code>1</code>で後退する方向が<code>2</code>です。</p>
+<h4><a class="anchor" aria-hidden="true" id="モーターの速度指示値"></a><a href="#モーターの速度指示値" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>モーターの速度指示値</h4>
+<p>直前で指定した ID のモーターに対して回転の速度を指定します。
+モーターの速度指示値は<code>0</code>以上<code>255</code>以下の範囲で指定できますが、モーターの速度指示値と実際のタイヤの回転速度の関係は以下のグラフのとおりです。</p>
+<p><img src="/toio-spec/docs/assets/motor_wheel_speed_v2.0.0.svg" alt="Input Speed and Wheel Speed"></p>
+<h3><a class="anchor" aria-hidden="true" id="時間指定付きモーター制御"></a><a href="#時間指定付きモーター制御" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>時間指定付きモーター制御</h3>
+<p>以下に示す構成のデータを書き込むことで動かす時間を指定してモーターを制御できます。
+指定した時間を経過するとモーターは停止します。</p>
+<table>
+<thead>
+<tr><th>データ位置</th><th>タイプ</th><th>内容</th><th>例</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>UInt8</td><td>制御の種類</td><td><span fixed><code>0x02</code></span>（時間指定付きモーター制御）</td></tr>
+<tr><td>1</td><td>UInt8</td><td>制御するモーターの ID</td><td><code>0x01</code>（左）</td></tr>
+<tr><td>2</td><td>UInt8</td><td>モーターの回転方向</td><td><code>0x01</code>（前）</td></tr>
+<tr><td>3</td><td>UInt8</td><td>モーターの速度指示値</td><td><code>0x64</code>（100）</td></tr>
+<tr><td>4</td><td>UInt8</td><td>制御するモーターの ID</td><td><code>0x02</code>（右）</td></tr>
+<tr><td>5</td><td>UInt8</td><td>モーターの回転方向</td><td><code>0x02</code>（後）</td></tr>
+<tr><td>6</td><td>UInt8</td><td>モーターの速度指示値</td><td><code>0x14</code>（20）</td></tr>
+<tr><td>7</td><td>UInt8</td><td>モーターの制御時間</td><td><code>0x0A</code>（100 ミリ秒）</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="モーターの制御時間"></a><a href="#モーターの制御時間" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>モーターの制御時間</h4>
+<p>モーターを動かす時間を<code>0</code>以上<code>255</code>以下の範囲で指定します。<code>0</code>は「時間制限無し」を意味し、<a href="#モーター制御">モーター制御</a>と同様に次の書き込み操作が行われるまで、モーターは指定した速度で動きづづけます。<code>1</code>以上<code>255</code>以下の範囲では x10 ミリ秒モーターは動いたあと停止します。</p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2019-6-12</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/toio-spec/docs/2.0.0/ble_battery"><span class="arrow-prev">← </span><span>バッテリー</span></a><a class="docs-next button" href="/toio-spec/docs/2.0.0/ble_light"><span>ランプ</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#書き込み操作">書き込み操作</a><ul class="toc-headings"><li><a href="#モーター制御">モーター制御</a></li><li><a href="#時間指定付きモーター制御">時間指定付きモーター制御</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><div><h5>Docs</h5><a href="/toio-spec/docs/about">はじめに</a><a href="/toio-spec/docs/hardware_components">ハードウェアについて</a><a href="/toio-spec/docs/ble_communication_overview">通信仕様について</a></div><div><h5>Community</h5><a href="/toio-spec/en/users.html">ユーザー＆ライブラリ</a><a href="https://stackoverflow.com/questions/tagged/toio" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://ja.stackoverflow.com/questions/tagged/toio" target="_blank" rel="noreferrer noopener">スタック・オーバーフロー</a></div><div><h5>More</h5><a href="https://toio.io" target="_blank" rel="noreferrer noopener">Official Web</a><a href="https://toio.io/platform/index.html" target="_blank" rel="noreferrer noopener">Official Web | toio 本体セット</a><a href="https://toio.io/platform/technology.html" target="_blank" rel="noreferrer noopener">Official Web | toio のテクノロジー</a><a href="https://note.toio.io/" target="_blank" rel="noreferrer noopener">toio 公式 note</a><a href="https://github.com/toio/toio-spec" target="_blank" rel="noreferrer noopener">GitHub</a><a class="github-button" href="https://github.com/toio/toio-spec" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub" rel="noreferrer noopener">Star</a></div></section><section class="license"><p>The document is licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer noopener">Creative Commons Attribution 4.0 International License</a>.</p><p>The image is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank" rel="noreferrer noopener">Creative Commons Attribution-NoDerivatives 4.0 International License</a>.</p></section><section class="copyright"><p>Copyright © 2019 Sony Interactive Entertainment Inc.</p><p><a href="https://www.sie.com/website.html" target="_blank" rel="noreferrer noopener">Cookie Policy</a></p><p><a href="https://toio.io/privacy.html" target="_blank" rel="noreferrer noopener">Privacy Policy</a></p><p><a href="trademark-notice">Trademark Notice</a></p></section></footer></div></body></html>
