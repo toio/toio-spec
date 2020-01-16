@@ -121,6 +121,83 @@ span[fixed] code {
 }
 
 /*
+ * h4 indicator
+ */
+.post h4 {
+  display: list-item;
+  list-style: '▶️ ';
+  margin-left: 1em;
+}
+
+.post h4 .hash-link {
+  margin-left: -2.5em;
+  padding-right: 2em;
+}
+
+/*
+ * new/update indicator
+ */
+.post h2 strong,
+.post h3 strong,
+.post h4 strong,
+.post h5 strong,
+.post h6 strong,
+.post h2 em,
+.post h3 em,
+.post h4 em,
+.post h5 em,
+.post h6 em {
+  position: relative;
+  font-style: normal;
+}
+
+.post h2 strong:after,
+.post h3 strong:after,
+.post h4 strong:after,
+.post h5 strong:after,
+.post h6 strong:after,
+.post h2 em:after,
+.post h3 em:after,
+.post h4 em:after,
+.post h5 em:after,
+.post h6 em:after,
+.post span[new]:after,
+.post span[update]:after {
+  position: absolute;
+  height: 100%;
+  margin: 0 0.5em;
+  padding: 0 6.4px;
+  background: #00a3bc;
+  color: white;
+  border-radius: 3px;
+  font-size: 0.85em;
+  vertical-align: bottom;
+}
+
+.post span[new]:after,
+.post span[update]:after {
+  position: relative;
+}
+
+.post h2 strong:after,
+.post h3 strong:after,
+.post h4 strong:after,
+.post h5 strong:after,
+.post h6 strong:after,
+.post span[new]:after {
+  content: 'new';
+}
+
+.post h2 em:after,
+.post h3 em:after,
+.post h4 em:after,
+.post h5 em:after,
+.post h6 em:after,
+.post span[update]:after {
+  content: 'updated';
+}
+
+/*
  * footer
  */
 
@@ -171,4 +248,13 @@ span[fixed] code {
   .nav-footer .copyright p {
     margin-right: 0;
   }
+}
+
+/*
+ * in page navigation
+ */
+.onPageNav strong,
+.onPageNav em {
+  font-weight: inherit;
+  font-style: inherit;
 }
