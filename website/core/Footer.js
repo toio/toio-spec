@@ -65,7 +65,10 @@ class Footer extends React.Component {
               target="_blank"
               rel="noreferrer noopener"
             >
-              Official Web | toio Technology
+              Official Web | toio のテクノロジー
+            </a>
+            <a href="https://note.toio.io/" target="_blank" rel="noreferrer noopener">
+              toio 公式 note
             </a>
             <a href={this.props.config.repoUrl} target="_blank" rel="noreferrer noopener">
               GitHub
