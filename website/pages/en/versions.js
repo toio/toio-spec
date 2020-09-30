@@ -18,12 +18,11 @@ const versions = require(`${CWD}/versions.json`)
 function Versions(props) {
   const { config: siteConfig } = props
   const latestVersion = versions[0]
-  const docUrl = version =>
+  const docUrl = (version) =>
     version !== latestVersion
       ? `${siteConfig.baseUrl}${siteConfig.docsUrl}/${version}/about`
       : `${siteConfig.baseUrl}${siteConfig.docsUrl}/about`
-  const changelogUrl = version =>
-    `${siteConfig.repoUrl}/blob/master/CHANGELOG-cube.md#${version.replace(/\./g, '')}`
+  const summaryUrl = `${siteConfig.baseUrl}${siteConfig.docsUrl}/how_to_update_cube#主なアップデート内容`
   return (
     <div className="docMainWrapper wrapper">
       <Container className="mainContainer versionsContainer">
@@ -31,27 +30,25 @@ function Versions(props) {
           <header className="postHeader">
             <h1>バージョン一覧</h1>
           </header>
+          <p>本サイトではキューブの BLE プロトコルバージョン毎にドキュメントを公開しています。</p>
           <p>
-            キューブのBLEプロトコルバージョン毎にドキュメントを公開しています。本サイトの更新履歴については{' '}
+            バージョンごとの更新内容については<a href={`${summaryUrl}`}>主なアップデート内容</a>
+            でご確認ください。 また、本サイトの更新履歴については{' '}
             <a href={`${siteConfig.repoUrl}`}>GitHub</a> でご確認ください。
           </p>
           <table className="versions">
             <thead>
               <tr>
-                <th>BLEプロトコルバージョン</th>
+                <th>BLE プロトコルバージョン</th>
                 <td>ドキュメントへのリンク</td>
-                <td>変更点</td>
               </tr>
             </thead>
             <tbody>
-              {versions.map(version => (
+              {versions.map((version) => (
                 <tr key={version}>
                   <th>{version}</th>
                   <td>
                     <a href={`${docUrl(version)}`}>Documentation</a>
-                  </td>
-                  <td>
-                    <a href={`${changelogUrl(version)}`}>Changelog</a>
                   </td>
                 </tr>
               ))}
