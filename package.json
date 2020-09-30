@@ -9,7 +9,9 @@
   },
   "scripts": {
     "lint": "textlint -f pretty-error docs/**",
+    "lint:all": "textlint -f pretty-error docs/** website/versioned_docs/**",
     "lint:fix": "textlint --fix docs/**",
+    "lint:all:fix": "textlint --fix docs/** website/versioned_docs/**",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

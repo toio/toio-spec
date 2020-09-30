@@ -1,6 +1,14 @@
 {
   "rules": {
-    "preset-ja-technical-writing": true,
+    "preset-ja-technical-writing": {
+      "max-kanji-continuous-len": {
+        "max": 6,
+        "allow": [
+          "最大速度指示値",
+          "複数目標指定付"
+        ]
+      }
+    },
     "preset-jtf-style": {
       "2.1.2.漢字": true,
       "2.1.5.カタカナ": true,
@@ -13,11 +21,17 @@
       "checkBlockQuote": true,
       "checkEmphasis": true,
       "checkHeader": true,
-      "rulePaths": ["./prh.yml"]
+      "rulePaths": [
+        "./prh.yml"
+      ]
     },
     "no-dead-link": {
       "checkRelative": true,
-      "ignore": ["https://github.com/toio/toio-spec"],
+      "ignore": [
+        "https://stackoverflow.com/**",
+        "https://ja.stackoverflow.com/**",
+        "https://note.toio.io"
+      ],
       "ignoreRedirects": true
     }
   }

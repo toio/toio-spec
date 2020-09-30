@@ -5,7 +5,7 @@ rules:
     pattern: レポジトリ
   - expected: キューブ
     pattern:
-      - /(?<!toio\s*)コア\s*キューブ/
+      - /(?<!toio(\s*|&trade;|™\s))コア\s*キューブ/
       - /toio\s*キューブ/
     specs:
       - from: コアキューブ
@@ -20,6 +20,10 @@ rules:
         to: キューブ
       - from: toio コア キューブ
         to: toio コア キューブ
+      - from: toio&trade;コア キューブ
+        to: toio&trade;コア キューブ
+      - from: toio™ コア キューブ
+        to: toio™ コア キューブ
   - expected: センサー
     pattern:
       - /センサ(?!ー)/
