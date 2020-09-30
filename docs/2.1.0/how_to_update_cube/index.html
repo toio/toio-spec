@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>アップデートについて · toio™コア キューブ 技術仕様</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## **キューブのアップデートについて**"/><meta name="docsearch:version" content="2.1.0"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="アップデートについて · toio™コア キューブ 技術仕様"/><meta property="og:type" content="website"/><meta property="og:url" content="https://toio.github.io/toio-spec/"/><meta property="og:description" content="## **キューブのアップデートについて**"/><meta property="og:image" content="https://toio.github.io/toio-spec/img/social_image.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://toio.github.io/toio-spec/img/social_image.png"/><link rel="shortcut icon" href="/toio-spec/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-133660753-2"></script><script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments); }
+              gtag('js', new Date());
+              gtag('config', 'UA-133660753-2');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/toio-spec/js/scrollSpy.js"></script><link rel="stylesheet" href="/toio-spec/css/main.css"/><script src="/toio-spec/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/toio-spec/"><h2 class="headerTitle">toio™コア キューブ 技術仕様</h2></a><a href="/toio-spec/versions"><h3>2.1.0</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a target="_self"></a></li><li class="siteNavGroupActive"><a href="/toio-spec/docs/2.1.0/about" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>はじめに</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">はじめに</h3><ul class=""><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.1.0/about">このサイトについて</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.1.0/how_to_use_cube">🔄 キューブの使い方</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/toio-spec/docs/2.1.0/how_to_update_cube">🔄 アップデートについて</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">ハードウェア仕様</h3><ul class=""><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.1.0/hardware_components">各部の名前</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.1.0/hardware_shape">形状・サイズ</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.1.0/hardware_other">走行性能</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">通信仕様</h3><ul class=""><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.1.0/ble_communication_overview">通信概要</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.1.0/ble_how_to_communicate">機能の利用</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">各種機能</h4><ul><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.1.0/ble_id">🔄 読み取りセンサー</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.1.0/ble_sensor">🔄 モーションセンサー</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.1.0/ble_button">ボタン</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.1.0/ble_battery">バッテリー</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.1.0/ble_motor">🔄 モーター</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.1.0/ble_light">ランプ</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.1.0/ble_sound">サウンド</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.1.0/ble_configuration">🔄 設定</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">その他</h4><ul><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.1.0/info_position_id">🔄 Position ID 一覧</a></li><li class="navListItem"><a class="navItem" href="/toio-spec/docs/2.1.0/info_standard_id">🔄 Standard ID 一覧</a></li></ul></div></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">アップデートについて</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="キューブのアップデートについて"></a><a href="#キューブのアップデートについて" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>キューブのアップデートについて</strong></h2>
+<p>キューブのシステムソフトウェアをアップデートすることで主に通信仕様において新しい機能が追加されたり、安定性が向上します。システムソフトウェアのアップデート方法については<a href="https://toio.io/update">toio システムソフトウェアアップデートのご案内</a>をご覧ください。</p>
+<h3><a class="anchor" aria-hidden="true" id="ble-プロトコルバージョン"></a><a href="#ble-プロトコルバージョン" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>BLE プロトコルバージョン</h3>
+<p>キューブの通信仕様は BLE プロトコルバージョンでバージョン管理されます。お手持ちのキューブの BLE プロトコルバージョンは<a href="/toio-spec/docs/2.1.0/ble_configuration#ble-プロトコルバージョンの要求">設定 / BLE プロトコルバージョンの要求</a>で確認できます。</p>
+<h2><a class="anchor" aria-hidden="true" id="技術仕様のアップデートについて"></a><a href="#技術仕様のアップデートについて" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>技術仕様のアップデートについて</strong></h2>
+<p>このサイトでは BLE プロトコルバージョンごとの技術仕様を公開しています。ページ左上の「toio™ コア キューブ技術仕様」の右側にある数字が表示している仕様に対応した BLE プロトコルバージョンを表しています。<a href="https://toio.github.io/toio-spec/versions">バージョン一覧</a>から表示するバージョンを変更したり詳しい変更内容を参照したりできます。</p>
+<h3><a class="anchor" aria-hidden="true" id="更新された項目の表示"></a><a href="#更新された項目の表示" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>更新された項目の表示</h3>
+<p>表示しているバージョンにおいて、1 つ前のバージョンから変更された機能についてはサイドバーに更新マーク（🔄）が付きます。また、各ページ内の項目には<span new></span>や<span update></span>などのマークが付きますので参考にしてください。</p>
+<h2><a class="anchor" aria-hidden="true" id="主なアップデート内容"></a><a href="#主なアップデート内容" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>主なアップデート内容</strong></h2>
+<h3><a class="anchor" aria-hidden="true" id="2020423"></a><a href="#2020423" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2020/4/23</h3>
+<p>toio コア キューブ（単体）に付属する簡易プレイマットと簡易カードに関する情報を追加しました。</p>
+<ul>
+<li>toio ID の情報一覧を<a href="/toio-spec/docs/2.1.0/hardware_position_id">Position ID 一覧</a>と<a href="/toio-spec/docs/2.1.0/hardware_standard_id">Standard ID 一覧</a>に移動</li>
+<li>toio コア キューブ（単体）に付属する<a href="/toio-spec/docs/2.1.0/hardware_position_id#toio-コア-キューブ（単体）付属の簡易プレイマット">簡易プレイマット</a>と<a href="/toio-spec/docs/2.1.0/hardware_standard_id#toio-コア-キューブ（単体）付属の簡易カード">簡易カード</a>に関する情報を追加</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="20191113"></a><a href="#20191113" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2019/11/13</h3>
+<p>BLE プロトコルバージョン v2.1.0 では以下のような内容の変更・追加があります。</p>
+<ul>
+<li><a href="/toio-spec/docs/2.1.0/ble_sensor#検出">ダブルタップ検出・姿勢検出</a>の追加</li>
+<li><a href="/toio-spec/docs/2.1.0/ble_motor#モーターの速度指示値">モーターの速度指示値</a>の有効範囲の拡大
+<ul>
+<li>速度指示値の最大値が<code>100</code>から<code>115</code>になり、より速い動作が可能になります</li>
+<li>速度指示値の最小値が<code>10</code>から<code>8</code>になり、よりゆっくりとした動作が可能になります</li>
+</ul></li>
+<li>モーター制御のバリエーションの追加
+<ul>
+<li><a href="/toio-spec/docs/2.1.0/ble_motor#目標指定付きモーター制御">目標指定付きモーター制御</a></li>
+<li><a href="/toio-spec/docs/2.1.0/ble_motor#複数目標指定付きモーター制御">複数目標指定付きモーター制御</a></li>
+<li><a href="/toio-spec/docs/2.1.0/ble_motor#加速度指定付きモーター制御">加速度指定付きモーター制御</a></li>
+</ul></li>
+</ul>
+<p>詳しい仕様はこのサイトで記載していますが、<a href="https://note.toio.io">toio 公式 note</a>でも一部解説していく予定ですのでそちらも参考にしてください。</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/toio-spec/docs/2.1.0/how_to_use_cube"><span class="arrow-prev">← </span><span>🔄 キューブの使い方</span></a><a class="docs-next button" href="/toio-spec/docs/2.1.0/hardware_components"><span>各部の名前</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#キューブのアップデートについて"><strong>キューブのアップデートについて</strong></a><ul class="toc-headings"><li><a href="#ble-プロトコルバージョン">BLE プロトコルバージョン</a></li></ul></li><li><a href="#技術仕様のアップデートについて"><strong>技術仕様のアップデートについて</strong></a><ul class="toc-headings"><li><a href="#更新された項目の表示">更新された項目の表示</a></li></ul></li><li><a href="#主なアップデート内容"><strong>主なアップデート内容</strong></a><ul class="toc-headings"><li><a href="#2020423">2020/4/23</a></li><li><a href="#20191113">2019/11/13</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><div><h5>Docs</h5><a href="/toio-spec/docs/about">はじめに</a><a href="/toio-spec/docs/hardware_components">ハードウェアについて</a><a href="/toio-spec/docs/ble_communication_overview">通信仕様について</a></div><div><h5>Community</h5><a href="/toio-spec/en/users.html">ユーザー＆ライブラリ</a><a href="https://stackoverflow.com/questions/tagged/toio" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://ja.stackoverflow.com/questions/tagged/toio" target="_blank" rel="noreferrer noopener">スタック・オーバーフロー</a></div><div><h5>More</h5><a href="https://toio.io" target="_blank" rel="noreferrer noopener">Official Web</a><a href="https://toio.io/platform/index.html" target="_blank" rel="noreferrer noopener">Official Web | toio 本体セット</a><a href="https://toio.io/platform/technology.html" target="_blank" rel="noreferrer noopener">Official Web | toio のテクノロジー</a><a href="https://toio.io/blog/" target="_blank" rel="noreferrer noopener">toio blog</a><a href="https://github.com/toio/toio-spec" target="_blank" rel="noreferrer noopener">GitHub</a><a class="github-button" href="https://github.com/toio/toio-spec" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub" rel="noreferrer noopener">Star</a></div></section><section class="license"><p>The document is licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer noopener">Creative Commons Attribution 4.0 International License</a>.</p><p>The image is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank" rel="noreferrer noopener">Creative Commons Attribution-NoDerivatives 4.0 International License</a>.</p></section><section class="copyright"><p>Copyright © 2020 Sony Interactive Entertainment Inc.</p><p><a href="https://www.sie.com/website.html" target="_blank" rel="noreferrer noopener">Cookie Policy</a></p><p><a href="https://toio.io/privacy.html" target="_blank" rel="noreferrer noopener">Privacy Policy</a></p><p><a href="trademark-notice">Trademark Notice</a></p></section></footer></div></body></html>
