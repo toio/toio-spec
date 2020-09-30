@@ -19,16 +19,19 @@ toio-spec adopted [Docusaurus](https://docusaurus.io) as a website generator.
 
 ```
 toio-spec/
+  |- .github/             # github related files (GitHub Action's script).
   |- docs/                # All technical documents are here as markdown text.
   |- website/             # is for the website and follows the way of Docusaurus.
   |
+  |- .gitignore
+  |- .prettierrc          # prettier configuration
+  |- .textlintrc          # textlint configuration
+  |- CODE_OF_CONDUCT.md
+  |- CONTRIBUTING.md
   |- LICENSE              # describes license information for this repository.
   |- README.md
-  |- CONTRIBUTING.md
-  |- CODE_OF_CONDUCT.md
-  |- CHANGELOG-cube.md    # Cube's changelog linked from version page of website.
-  |- prh.yml              # Configuration file of 'textlint-rule-prh'
   |- package.json
+  |- prh.yml              # Configuration file of 'textlint-rule-prh'
   `- yarn.lock
 ```
 
@@ -69,9 +72,9 @@ yarn lint
 We adopted [GitHub Flow](http://scottchacon.com/2011/08/31/github-flow.html). (Only release process is customized.)
 
 - simple workflow
-- master is always stable and releasable
+- main branch is always stable and releasable
 - human readable branch name
-- merge master via PR
+- merge main branch via PR
 
 ## License
 
