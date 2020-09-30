@@ -47,8 +47,7 @@ original_id: ble_motor
 直前で指定した ID のモーターに対して回転の速度を指定します。
 モーターの速度指示値は`0`以上`255`以下の範囲で指定できますが、モーターの速度指示値と実際のタイヤの回転速度の関係は以下のグラフのとおりです。
 
-![Input Speed and Wheel Speed](assets/motor_wheel_speed.svg)
-s
+![Input Speed and Wheel Speed](assets/motor_wheel_speed_v2.0.0.svg)
 
 ### 時間指定付きモーター制御
 

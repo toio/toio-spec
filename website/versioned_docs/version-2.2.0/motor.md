@@ -1,7 +1,8 @@
 ---
-id: ble_motor
+id: version-2.2.0-ble_motor
 title: モーター
 sidebar_label: 🔄 モーター
+original_id: ble_motor
 ---
 
 ![Cube Direction](assets/motor_cube_direction.svg)

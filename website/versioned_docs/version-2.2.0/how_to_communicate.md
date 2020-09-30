@@ -1,7 +1,8 @@
 ---
-id: ble_how_to_communicate
+id: version-2.2.0-ble_how_to_communicate
 title: 機能の利用
 sidebar_label: 機能の利用
+original_id: ble_how_to_communicate
 ---
 
 キューブの各種機能は特性（characteristic）を使うことで情報の取得や制御ができます。各特性は「書き込み（Write）」や「読み出し（Read）」「通知（Notify）」のプロパティのいずれかをサポートし、それぞれ以下のように使い分けます。

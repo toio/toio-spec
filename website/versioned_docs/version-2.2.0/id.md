@@ -1,7 +1,8 @@
 ---
-id: ble_id
+id: version-2.2.0-ble_id
 title: 読み取りセンサー
 sidebar_label: 読み取りセンサー
+original_id: ble_id
 ---
 
 [トイオ・コレクション](https://toio.io/titles/toio-collection.html)に付属する「プレイマット」や「各種カード・シート」、[toio コア キューブ（単体）](https://toio.io/cube)に付属する「簡易プレイマット」「簡易カード」には特殊なパターンが印刷されています。これを toio ID と呼びます。キューブは底面にある「読み取りセンサー」でそのパターンから固有の情報を読み取り、印刷物上での位置の特定（絶対位置検出）を行います。
