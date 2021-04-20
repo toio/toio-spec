@@ -1,7 +1,8 @@
 ---
-id: ble_sensor
+id: version-2.3.0-ble_sensor
 title: モーション検出
 sidebar_label: 🔄 モーション検出
+original_id: ble_sensor
 ---
 
 キューブはモーションセンサー（6 軸検出システム）によってキューブの姿勢や衝突などの状態情報を検出できます。

@@ -1,7 +1,8 @@
 ---
-id: ble_magnetic_sensor
+id: version-2.3.0-ble_magnetic_sensor
 title: 磁気センサー
 sidebar_label: 🔄 磁気センサー
+original_id: ble_magnetic_sensor
 ---
 
 

@@ -1,7 +1,8 @@
 ---
-id: ble_configuration
+id: version-2.3.0-ble_configuration
 title: 設定
 sidebar_label: 🔄 設定
+original_id: ble_configuration
 ---
 
 キューブは自身の通信仕様のバージョン情報や各種設定情報を内部に保存しています。

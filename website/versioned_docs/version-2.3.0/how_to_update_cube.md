@@ -1,7 +1,8 @@
 ---
-id: how_to_update_cube
+id: version-2.3.0-how_to_update_cube
 title: アップデートについて
 sidebar_label: 🔄 アップデートについて
+original_id: how_to_update_cube
 ---
 
 ## キューブのアップデートについて

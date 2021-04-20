@@ -1,7 +1,8 @@
 ---
-id: hardware_position_id
+id: version-2.3.0-hardware_position_id
 title: Position ID 一覧
 sidebar_label: Position ID 一覧
+original_id: hardware_position_id
 ---
 
 以下に挙げる商品には Position ID が印刷されています。
