@@ -45,7 +45,7 @@ const siteConfig = {
   // editUrl: 'https://github.com/toio/toio-spec/edit/master/docs/',
 
   enableUpdateBy: false,
-  enableUpdateTime: true,
+  enableUpdateTime: false,
 
   repoUrl: 'https://github.com/toio/toio-spec',
 
