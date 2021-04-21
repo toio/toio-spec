@@ -18,6 +18,7 @@
         "ids": [
           "ble_id",
           "ble_sensor",
+          "ble_high_precision_tilt_sensor",
           "ble_magnetic_sensor",
           "ble_button",
           "ble_battery",
