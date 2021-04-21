@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>姿勢角検出 · toio™コア キューブ 技術仕様</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="![Cube coordinate system](/toio-spec/docs/assets/sensor_cube_axis.svg)"/><meta name="docsearch:version" content="next"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="姿勢角検出 · toio™コア キューブ 技術仕様"/><meta property="og:type" content="website"/><meta property="og:url" content="https://toio.github.io/toio-spec/"/><meta property="og:description" content="![Cube coordinate system](/toio-spec/docs/assets/sensor_cube_axis.svg)"/><meta property="og:image" content="https://toio.github.io/toio-spec/img/social_image.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://toio.github.io/toio-spec/img/social_image.png"/><link rel="shortcut icon" href="/toio-spec/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-133660753-2"></script><script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments); }
+              gtag('js', new Date());
+              gtag('config', 'UA-133660753-2');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/toio-spec/js/scrollSpy.js"></script><link rel="stylesheet" href="/toio-spec/css/main.css"/><script src="/toio-spec/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/toio-spec/"><h2 class="headerTitle">toio™コア キューブ 技術仕様</h2></a><a href="/toio-spec/versions"><h3>next</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a target="_self"></a></li><li class=""><a href="/toio-spec/docs/next/about" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">姿勢角検出</h1></header><article><div><span><p><img src="/toio-spec/docs/assets/sensor_cube_axis.svg" alt="Cube coordinate system"></p>
+<p>キューブのモーションセンサー（6 軸検出システム）の出力値をもとに姿勢推定アルゴリズムによってキューブの姿勢角を算出した値（推定値）を提供します。<br>
+この姿勢角はモーションセンサーの生値ではなく、加速度・角速度をキューブ内で合成して算出した値であるため、姿勢角の値には常に一定の誤差やずれ（ドリフト）を含みます。</p>
+<blockquote>
+<p>この機能は<strong>デフォルトでは無効</strong>になっています。<a href="/toio-spec/docs/next/ble_configuration#姿勢角検出の設定">設定 - 姿勢角検出の設定</a>で有効化することではじめて利用可能になります。</p>
+</blockquote>
+<p>姿勢角検出は以下の特性（characteristic）を使うことで取得できます。特性は<a href="/toio-spec/docs/next/ble_sensor">モーション検出</a>および<a href="/toio-spec/docs/next/ble_magnetic_sensor">磁気センサー</a>と同じです。</p>
+<table>
+<thead>
+<tr><th>プロパティ</th><th>値</th></tr>
+</thead>
+<tbody>
+<tr><td>Characteristic UUID</td><td>10B20106-5B3B-4571-9508-CF3EFCD7BBAE</td></tr>
+<tr><td>Properties</td><td><a href="#書き込み操作">Write</a>, <a href="#読み出し操作--通知">Read</a>, <a href="#読み出し操作--通知">Notify</a></td></tr>
+<tr><td>Descriptor</td><td>Sensor Information</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="書き込み操作"></a><a href="#書き込み操作" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>書き込み操作</strong></h2>
+<h3><a class="anchor" aria-hidden="true" id="姿勢角検出の要求"></a><a href="#姿勢角検出の要求" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>姿勢角検出の要求</h3>
+<p>以下のデータを書き込むことで姿勢角情報を要求できます。キューブは要求を受け取ると、必ず 1 回姿勢角の通知を行います。</p>
+<table>
+<thead>
+<tr><th>データ位置</th><th>タイプ</th><th>内容</th><th>例</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>UInt8</td><td>情報の種類</td><td><span fixed><code>0x83</code></span> (姿勢角検出の要求）</td></tr>
+<tr><td>1</td><td>UInt8</td><td>通知内容の種類</td><td><span fixed><code>0x01</code></span> (オイラー角での通知）</td></tr>
+</tbody>
+</table>
+<p>通知内容の種類は以下のとおりです。</p>
+<table>
+<thead>
+<tr><th>通知内容の種類</th><th>意味</th></tr>
+</thead>
+<tbody>
+<tr><td><code>0x01</code></td><td>オイラー角での通知</td></tr>
+<tr><td><code>0x02</code></td><td>クォータニオンでの通知</td></tr>
+</tbody>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="読み出し操作--通知"></a><a href="#読み出し操作--通知" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>読み出し操作 / 通知</strong></h2>
+<p>キューブの姿勢角が変化すると、この特性は BLE セントラルに情報を通知します。
+通知される情報は読み出し操作でも取得できます。</p>
+<blockquote>
+<p>特性は<a href="/toio-spec/docs/next/ble_sensor">モーション検出</a>および<a href="/toio-spec/docs/next/ble_magnetic_sensor">磁気センサー</a>と共通です。
+これらの情報も取得されますので、利用の際には<a href="/toio-spec/docs/next/ble_sensor#読み出し操作--通知">モーション検出 - 読み出し操作 / 通知</a>および<a href="/toio-spec/docs/next/ble_magnetic_sensor#読み出し操作--通知">磁気センサー - 読み出し操作 / 通知</a>も確認してください。</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="姿勢角情報の取得（オイラー角での通知）"></a><a href="#姿勢角情報の取得（オイラー角での通知）" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>姿勢角情報の取得（オイラー角での通知）</h3>
+<p>通知内容の種類をオイラー角での通知にした場合は以下のデータが取得できます。</p>
+<table>
+<thead>
+<tr><th>データ位置</th><th>タイプ</th><th>内容</th><th>例</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>UInt8</td><td>情報の種類</td><td><span fixed><code>0x03</code></span>（姿勢角検出）</td></tr>
+<tr><td>1</td><td>UInt8</td><td>通知内容の種類</td><td><span fixed><code>0x01</code></span>（オイラー角での通知）</td></tr>
+<tr><td>2</td><td>Int16</td><td>Roll（ロール/X軸）</td><td><code>0x0000</code>（0°）</td></tr>
+<tr><td>4</td><td>Int16</td><td>Pitch（ピッチ/Y軸）</td><td><code>0x00B4</code>（180°）</td></tr>
+<tr><td>6</td><td>Int16</td><td>Yaw（ヨー/Z軸）</td><td><code>0xFF4E</code>（-178°）</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="角度"></a><a href="#角度" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>角度</h4>
+<p>角度の範囲は -179°(0xFF4E) から 180°(0x004B) です。</p>
+<p>回転順序はYaw（ヨー/Z軸）、Pitch（ピッチ/Y軸）、Roll（ロール/X軸）の順です。<br>
+ロール角とピッチ角は、キューブのタイヤ面を下面として水平に置いた状態が0°です。ヨー角は、キューブが起動したときの向きが0°です。</p>
+<h4><a class="anchor" aria-hidden="true" id="誤差"></a><a href="#誤差" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>誤差</h4>
+<p>Z軸まわりの回転（オイラー角におけるヨー角）に対しては重力加速度を使った補正を行えないため誤差が蓄積されます。 以下はその影響の具体例です。</p>
+<ul>
+<li>キューブを動かしていないのに、数秒に1°程度ヨー角がずれる</li>
+<li>Z軸を中心軸としてキューブを1回転させると、ヨー角が数°ずれる</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="姿勢角情報の取得（クォータニオンでの通知）"></a><a href="#姿勢角情報の取得（クォータニオンでの通知）" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>姿勢角情報の取得（クォータニオンでの通知）</h3>
+<p>通知内容の種類をクォータニオンでの通知にした場合は以下のデータが取得できます。</p>
+<table>
+<thead>
+<tr><th>データ位置</th><th>タイプ</th><th>内容</th><th>例</th></tr>
+</thead>
+<tbody>
+<tr><td>0</td><td>UInt8</td><td>情報の種類</td><td><span fixed><code>0x03</code></span>（姿勢角検出）</td></tr>
+<tr><td>1</td><td>UInt8</td><td>通知内容の種類</td><td><span fixed><code>0x02</code></span>（クォータニオンでの通知）</td></tr>
+<tr><td>2</td><td>Int16</td><td>w</td><td><code>0x0000</code>（0）</td></tr>
+<tr><td>4</td><td>Int16</td><td>x</td><td><code>0x2710</code>（10,000）</td></tr>
+<tr><td>6</td><td>Int16</td><td>y</td><td><code>0x0000</code>（0）</td></tr>
+<tr><td>8</td><td>Int16</td><td>z</td><td><code>0x0000</code>（0）</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="値の範囲"></a><a href="#値の範囲" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>値の範囲</h4>
+<p>値の範囲は -10,000 から 10,000 になります。 一般的にクォータニオンの値の範囲は -1 から 1 の値をとりますが、通知データは4桁の固定小数点と同等の精度で扱うためにこれを 10,000 倍して小数値を切り捨てた整数値で表現しています。</p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 4/21/2021</em></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#書き込み操作"><strong>書き込み操作</strong></a><ul class="toc-headings"><li><a href="#姿勢角検出の要求">姿勢角検出の要求</a></li></ul></li><li><a href="#読み出し操作--通知"><strong>読み出し操作 / 通知</strong></a><ul class="toc-headings"><li><a href="#姿勢角情報の取得（オイラー角での通知）">姿勢角情報の取得（オイラー角での通知）</a></li><li><a href="#姿勢角情報の取得（クォータニオンでの通知）">姿勢角情報の取得（クォータニオンでの通知）</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><div><h5>Docs</h5><a href="/toio-spec/docs/about">はじめに</a><a href="/toio-spec/docs/hardware_components">ハードウェアについて</a><a href="/toio-spec/docs/ble_communication_overview">通信仕様について</a></div><div><h5>Community</h5><a href="/toio-spec/en/users.html">ユーザー＆ライブラリ</a><a href="https://stackoverflow.com/questions/tagged/toio" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://ja.stackoverflow.com/questions/tagged/toio" target="_blank" rel="noreferrer noopener">スタック・オーバーフロー</a></div><div><h5>More</h5><a href="https://toio.io" target="_blank" rel="noreferrer noopener">Official Web</a><a href="https://toio.io/platform/index.html" target="_blank" rel="noreferrer noopener">Official Web | toio 本体セット</a><a href="https://toio.io/platform/technology.html" target="_blank" rel="noreferrer noopener">Official Web | toio のテクノロジー</a><a href="https://toio.io/blog/" target="_blank" rel="noreferrer noopener">toio blog</a><a href="https://github.com/toio/toio-spec" target="_blank" rel="noreferrer noopener">GitHub</a><a class="github-button" href="https://github.com/toio/toio-spec" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub" rel="noreferrer noopener">Star</a></div></section><section class="license"><p>The document is licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer noopener">Creative Commons Attribution 4.0 International License</a>.</p><p>The image is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank" rel="noreferrer noopener">Creative Commons Attribution-NoDerivatives 4.0 International License</a>.</p></section><section class="copyright"><p>Copyright © 2021 Sony Interactive Entertainment Inc.</p><p><a href="https://www.sie.com/website.html" target="_blank" rel="noreferrer noopener">Cookie Policy</a></p><p><a href="https://toio.io/privacy.html" target="_blank" rel="noreferrer noopener">Privacy Policy</a></p><p><a href="trademark-notice">Trademark Notice</a></p></section></footer></div></body></html>
