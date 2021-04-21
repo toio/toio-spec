@@ -1,7 +1,8 @@
 ---
-id: hardware_standard_id
+id: version-2.3.0-hardware_standard_id
 title: Standard ID 一覧
 sidebar_label: Standard ID 一覧
+original_id: hardware_standard_id
 ---
 
 以下に挙げる商品には Standard ID が印刷されています。

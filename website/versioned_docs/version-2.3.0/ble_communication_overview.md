@@ -1,7 +1,8 @@
 ---
-id: ble_communication_overview
+id: version-2.3.0-ble_communication_overview
 title: 通信概要
 sidebar_label: 🔄 通信概要
+original_id: ble_communication_overview
 ---
 
 ## キューブとの通信について
