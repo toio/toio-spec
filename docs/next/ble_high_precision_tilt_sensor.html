@@ -114,13 +114,13 @@
 <tbody>
 <tr><td>0</td><td>UInt8</td><td>情報の種類</td><td><span fixed><code>0x03</code></span>（姿勢角検出）</td></tr>
 <tr><td>1</td><td>UInt8</td><td>通知内容の種類</td><td><span fixed><code>0x01</code></span>（オイラー角での通知）</td></tr>
-<tr><td>2</td><td>Int16</td><td>Roll（ロール/X軸）</td><td><code>0x0000</code>（0°）</td></tr>
-<tr><td>4</td><td>Int16</td><td>Pitch（ピッチ/Y軸）</td><td><code>0x00B4</code>（180°）</td></tr>
+<tr><td>2</td><td>Int16</td><td>Roll（ロール/X軸）</td><td><code>0x00B4</code>（180°）</td></tr>
+<tr><td>4</td><td>Int16</td><td>Pitch（ピッチ/Y軸）</td><td><code>0x0000</code>（0°）</td></tr>
 <tr><td>6</td><td>Int16</td><td>Yaw（ヨー/Z軸）</td><td><code>0xFF4E</code>（-178°）</td></tr>
 </tbody>
 </table>
 <h4><a class="anchor" aria-hidden="true" id="角度"></a><a href="#角度" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>角度</h4>
-<p>角度の範囲は -179°(0xFF4E) から 180°(0x00B4) です。</p>
+<p>角度の範囲は Roll および Yaw は -179°(0xFF4D) から 180°(0x00B4) 、 Pitch は -90°(0xFFA6) から 90°(0x005A) です。</p>
 <p>回転順序はYaw（ヨー/Z軸）、Pitch（ピッチ/Y軸）、Roll（ロール/X軸）の順です。<br>
 ロール角とピッチ角は、キューブのタイヤ面を下面として水平に置いた状態が0°です。ヨー角は、キューブが起動したときの向きが0°です。</p>
 <h4><a class="anchor" aria-hidden="true" id="誤差"></a><a href="#誤差" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>誤差</h4>
