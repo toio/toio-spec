@@ -1,7 +1,7 @@
 ---
 id: version-2.3.0-hardware_position_id
 title: Position ID 一覧
-sidebar_label: Position ID 一覧
+sidebar_label: 🔄 Position ID 一覧
 original_id: hardware_position_id
 ---
 
@@ -10,6 +10,7 @@ original_id: hardware_position_id
 - [トイオ・コレクション](https://toio.io/titles/toio-collection.html)に付属するプレイマット
 - [おんがくであそぼう ピコトンズ](https://toio.io/titles/picotons.html)に付属する「えんそう」マットよび「そうさ／オートプレイ」マット
 - [toio コア キューブ（単体）](https://toio.io/cube/)に付属する簡易プレイマット
+- [工作生物 ゲズンロイド](https://toio.io/titles/gesundroid.html)に付属するプレイマット
 
 それぞれの詳細について以下に記載します。また、BLE 経由での情報の読み出し方法については[読み取りセンサー](./id.md)を参照してください。
 
@@ -22,7 +23,10 @@ original_id: hardware_position_id
 | 土俵の面         | 45          | 45          | 455         | 455         |
 | 色付きタイルの面 | 545         | 45          | 955         | 455         |
 
-## 「おんがくであそぼう&nbsp;ピコトンズ&trade;」付属のマット
+## おんがくであそぼう&nbsp;ピコトンズ付属のマット
+
+利用にはシステムソフトウェアv02.0004以降へのアップデートが必要です。
+システムソフトウェアバージョンとアップデート方法については[はじめに-アップデートについて](./how_to_update_cube.md)を参照してください。
 
 ### えんそうマット（おもて）
 
@@ -63,3 +67,16 @@ original_id: hardware_position_id
 | 左上 X 座標 | 左上 Y 座標 | 右下 X 座標 | 右下 Y 座標 |
 | ----------- | ----------- | ----------- | ----------- |
 | 98          | 142         | 402         | 358         |
+
+## **工作生物&nbsp;ゲズンロイド付属のプレイマット**
+
+利用にはシステムソフトウェアv02.0004以降へのアップデートが必要です。
+システムソフトウェアバージョンとアップデート方法については[はじめに-アップデートについて](./how_to_update_cube.md)を参照してください。
+
+![工作生物 ゲズンロイドプレイマット](assets/Gesundroid-mat-for-public.svg)
+
+
+| 左上 X 座標 | 左上 Y 座標 | 右下 X 座標 | 右下 Y 座標 |
+| ----------- | ----------- | ----------- | ----------- |
+| 1050        | 45          | 1460        | 455         |
+
