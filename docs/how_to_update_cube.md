@@ -34,7 +34,13 @@ sidebar_label: 🔄 アップデートについて
 
 ## 主なアップデート内容
 
-### **2021/04/21**
+### **2021/07/19**
+
+「[工作生物 ゲズンロイド](https://toio.io/titles/gesundroid.html)」に関する toio ID の情報を追加しました。
+
+- [工作生物 ゲズンロイド付属のプレイマット](info_position_id.md#工作生物nbspゲズンロイド付属のプレイマット)に関する情報を追加
+
+### 2021/04/21
 
 キューブのシステムソフトウェア v02.0005（BLE プロトコルバージョン v2.3.0）に関する情報を追加しました。
 
@@ -66,7 +72,7 @@ sidebar_label: 🔄 アップデートについて
   - [Standard ID 一覧](info_standard_id.md)
 - 「[トイオ・コレクション 拡張パック](https://toio.io/titles/toio-collection-extension.html)」「[おんがくであそぼう ピコトンズ](https://toio.io/titles/picotons.html)」に関する toio ID の情報を追加
   - [Standard ID 一覧 - トイオ・コレクション 拡張パック](info_standard_id.md#トイオ・コレクション-拡張パックに付属する読み取りマーク)
-  - [Position ID 一覧 - おんがくであそぼう ピコトンズ](info_position_id.md#おんがくであそぼう-ピコトンズ)
+  - [Position ID 一覧 - おんがくであそぼう ピコトンズ](info_position_id.md#おんがくであそぼうnbspピコトンズ付属のマット)
 
 ### 2020/04/23
 
