@@ -5,8 +5,12 @@ node_modules
 lib/core/metadata.js
 lib/core/MetadataBlog.js
 
-website/translated_docs
-website/build/
-website/yarn.lock
-website/node_modules
-website/i18n/*
+v1-website/translated_docs
+v1-website/build/
+v1-website/yarn.lock
+v1-website/node_modules
+v2-website/translated_docs
+v2-website/build/
+v2-website/yarn.lock
+v2-website/node_modules
+v2-website/.docusaurus
