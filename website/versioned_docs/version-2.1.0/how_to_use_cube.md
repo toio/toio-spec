@@ -1,7 +1,7 @@
 ---
-id: version-2.1.0-how_to_use_cube
-title: キューブの使い方
-sidebar_label: 🔄 キューブの使い方
+id: how_to_use_cube
+title: 'キューブの使い方'
+sidebar_label: '🔄 キューブの使い方'
 original_id: how_to_use_cube
 ---
 
@@ -18,7 +18,7 @@ original_id: how_to_use_cube
 キューブの底面に電源ボタンがあります。電源ボタンを押すとキューブの電源が入ります。
 また、電源ボタンを長押しすると電源を切ることができます。
 
-## *オートパワーオフ機能*
+## オートパワーオフ機能 <span class="update"/>
 
 キューブとの通信は Bluetooth Low Energy (BLE) で行いますが、キューブが BLE で他のデバイスと未接続な状態が 15 分間続くと自動的に電源が切れます。また、BLE 未接続な状態の間は 3 分おきに報知音が鳴ります。
 

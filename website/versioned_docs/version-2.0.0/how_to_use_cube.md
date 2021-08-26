@@ -1,7 +1,7 @@
 ---
-id: version-2.0.0-how_to_use_cube
-title: キューブの使い方
-sidebar_label: キューブの使い方
+id: how_to_use_cube
+title: "キューブの使い方"
+sidebar_label: "キューブの使い方"
 original_id: how_to_use_cube
 ---
 

@@ -1,7 +1,7 @@
 ---
-id: version-2.0.0-ble_battery
-title: バッテリー
-sidebar_label: バッテリー
+id: ble_battery
+title: "バッテリー"
+sidebar_label: "バッテリー"
 original_id: ble_battery
 ---
 

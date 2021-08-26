@@ -1,7 +1,7 @@
 ---
-id: version-2.2.0-ble_how_to_communicate
-title: 機能の利用
-sidebar_label: 機能の利用
+id: ble_how_to_communicate
+title: '機能の利用'
+sidebar_label: '機能の利用'
 original_id: ble_how_to_communicate
 ---
 
@@ -21,7 +21,6 @@ original_id: ble_how_to_communicate
 | データ位置 | タイプ | 内容 | 例  |
 | ---------- | ------ | ---- | --- |
 
-
 #### データ位置
 
 0 から始まるバッファー上のデータの位置です。
@@ -38,7 +37,7 @@ original_id: ble_how_to_communicate
 
 具体的な例を以下のスタイルで記載します。
 
-- <span fixed>`0x00`</span>: 固定データ（この値以外は無効 or この値以外存在しない）
+- <span class="fixed"><code>0x00</code></span>: 固定データ（この値以外は無効 or この値以外存在しない）
 - `0x00`: 固定でないデータの一例
 
 ## 書き込み操作におけるエラー

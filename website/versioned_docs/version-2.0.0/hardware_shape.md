@@ -1,7 +1,7 @@
 ---
-id: version-2.0.0-hardware_shape
-title: 形状・サイズ
-sidebar_label: 形状・サイズ
+id: hardware_shape
+title: "形状・サイズ"
+sidebar_label: "形状・サイズ"
 original_id: hardware_shape
 ---
 

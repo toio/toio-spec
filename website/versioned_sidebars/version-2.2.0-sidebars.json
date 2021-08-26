@@ -1,36 +1,108 @@
 {
-  "version-2.2.0-docs": {
-    "はじめに": [
-      "version-2.2.0-about",
-      "version-2.2.0-how_to_use_cube",
-      "version-2.2.0-how_to_update_cube"
-    ],
-    "ハードウェア仕様": [
-      "version-2.2.0-hardware_components",
-      "version-2.2.0-hardware_shape",
-      "version-2.2.0-hardware_other",
-      "version-2.2.0-hardware_position_id",
-      "version-2.2.0-hardware_standard_id",
-      "version-2.2.0-hardware_magnet"
-    ],
-    "通信仕様": [
-      "version-2.2.0-ble_communication_overview",
-      "version-2.2.0-ble_how_to_communicate",
-      {
-        "type": "subcategory",
-        "label": "各種機能",
-        "ids": [
-          "version-2.2.0-ble_id",
-          "version-2.2.0-ble_sensor",
-          "version-2.2.0-ble_magnetic_sensor",
-          "version-2.2.0-ble_button",
-          "version-2.2.0-ble_battery",
-          "version-2.2.0-ble_motor",
-          "version-2.2.0-ble_light",
-          "version-2.2.0-ble_sound",
-          "version-2.2.0-ble_configuration"
-        ]
-      }
-    ]
-  }
+  "version-2.2.0/docs": [
+    {
+      "type": "category",
+      "label": "はじめに",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2.2.0/about"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.2.0/how_to_use_cube"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.2.0/how_to_update_cube"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "ハードウェア仕様",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2.2.0/hardware_components"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.2.0/hardware_shape"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.2.0/hardware_other"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.2.0/hardware_position_id"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.2.0/hardware_standard_id"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.2.0/hardware_magnet"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "通信仕様",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2.2.0/ble_communication_overview"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.2.0/ble_how_to_communicate"
+        },
+        {
+          "type": "category",
+          "label": "各種機能",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-2.2.0/ble_id"
+            },
+            {
+              "type": "doc",
+              "id": "version-2.2.0/ble_sensor"
+            },
+            {
+              "type": "doc",
+              "id": "version-2.2.0/ble_magnetic_sensor"
+            },
+            {
+              "type": "doc",
+              "id": "version-2.2.0/ble_button"
+            },
+            {
+              "type": "doc",
+              "id": "version-2.2.0/ble_battery"
+            },
+            {
+              "type": "doc",
+              "id": "version-2.2.0/ble_motor"
+            },
+            {
+              "type": "doc",
+              "id": "version-2.2.0/ble_light"
+            },
+            {
+              "type": "doc",
+              "id": "version-2.2.0/ble_sound"
+            },
+            {
+              "type": "doc",
+              "id": "version-2.2.0/ble_configuration"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
