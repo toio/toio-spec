@@ -1,7 +1,7 @@
 ---
-id: version-2.0.0-hardware_components
-title: 各部の名前
-sidebar_label: 各部の名前
+id: hardware_components
+title: "各部の名前"
+sidebar_label: "各部の名前"
 original_id: hardware_components
 ---
 

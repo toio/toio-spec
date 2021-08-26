@@ -1,7 +1,7 @@
 ---
-id: version-2.3.0-ble_communication_overview
-title: 通信概要
-sidebar_label: 🔄 通信概要
+id: ble_communication_overview
+title: '通信概要'
+sidebar_label: '🔄 通信概要'
 original_id: ble_communication_overview
 ---
 
@@ -9,7 +9,7 @@ original_id: ble_communication_overview
 
 キューブとの通信は Bluetooth&reg; 標準規格 Ver. 4.2（Bluetooth&reg; Low Energy、以下 BLE）で行います。
 
-## _キューブの発見_
+## キューブの発見 <span class="update"/>
 
 キューブは電源をいれると BLE ペリフェラル（Peripheral）として起動し、下記の情報をアドバタイズします。
 
@@ -17,31 +17,28 @@ original_id: ble_communication_overview
 | ------------------------------------- | --------------------------------------------------- |
 | Flags                                 | General Discoverable Mode,<br/>BR/EDR Not Supported |
 | Complete list of 128bit Service UUIDs | 10B20100-5B3B-4571-9508-CF3EFCD7BBAE                |
-| Complete Local Name                   | toio Core Cube-XXX                                 |
+| Complete Local Name                   | toio Core Cube-XXX                                  |
 
-### Complete Local Nameについて
+### Complete Local Name について
 
-キューブのシステムソフトウェア v02.0005（BLE プロトコルバージョン v2.3.0）から、Complete Local Name が toio Core Cube-XXXに変更されました。  
-XXXにはキューブごとに固有のID文字列が入ります。 これは電源を入れなおしても不変な値のため、数十台同時にキューブを運用する際に個体識別の補助に役立ちます。
-ID文字列は、すべてのキューブで固有の値になることを保証するものではありません。 また、キューブに記載されたシリアル番号と同じ番号ではありません。
+キューブのシステムソフトウェア v02.0005（BLE プロトコルバージョン v2.3.0）から、Complete Local Name が toio Core Cube-XXX に変更されました。  
+XXX にはキューブごとに固有の ID 文字列が入ります。 これは電源を入れなおしても不変な値のため、数十台同時にキューブを運用する際に個体識別の補助に役立ちます。
+ID 文字列は、すべてのキューブで固有の値になることを保証するものではありません。 また、キューブに記載されたシリアル番号と同じ番号ではありません。
 
-IDに使われる文字列は3桁の文字列で、アルファベット＋数字＋アルファベットの順番で構成されます。
+ID に使われる文字列は 3 桁の文字列で、アルファベット＋数字＋アルファベットの順番で構成されます。
 
 アルファベットは大文字、小文字の両方が使用されます。  
 アルファベットのうち下記の文字は使用されません。
 
-| IDに使用されないアルファベット          |
+| ID に使用されないアルファベット         |
 | --------------------------------------- |
 | l,I,o,O,g,q,s,S,v,V,u,U,w,W,x,X,y,Y,z,Z |
 
-
-
-| Complete Local Nameの例 |
-| ----------------------- |
-| toio Core Cube-M0p      |
-| toio Core Cube-a9R      |
-| toio Core Cube-C3P      |
-
+| Complete Local Name の例 |
+| ------------------------ |
+| toio Core Cube-M0p       |
+| toio Core Cube-a9R       |
+| toio Core Cube-C3P       |
 
 ## キューブの機能の利用
 

@@ -1,7 +1,7 @@
 ---
-id: version-2.2.0-hardware_position_id
-title: Position ID 一覧
-sidebar_label: 🔄 Position ID 一覧
+id: hardware_position_id
+title: 'Position ID 一覧'
+sidebar_label: '🔄 Position ID 一覧'
 original_id: hardware_position_id
 ---
 
@@ -22,7 +22,7 @@ original_id: hardware_position_id
 | 土俵の面         | 45          | 45          | 455         | 455         |
 | 色付きタイルの面 | 545         | 45          | 955         | 455         |
 
-## **「おんがくであそぼう&nbsp;ピコトンズ&trade;」付属のマット**
+## 「おんがくであそぼう&nbsp;ピコトンズ&trade;」付属のマット <span class="new"/>
 
 ### えんそうマット（おもて）
 

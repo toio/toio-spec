@@ -1,7 +1,7 @@
 ---
-id: version-2.1.0-info_standard_id
-title: Standard ID 一覧
-sidebar_label: 🔄 Standard ID 一覧
+id: info_standard_id
+title: 'Standard ID 一覧'
+sidebar_label: '🔄 Standard ID 一覧'
 original_id: info_standard_id
 ---
 
@@ -12,7 +12,7 @@ original_id: info_standard_id
 
 それぞれの詳細について以下に記載します。また、BLE 経由での情報の読み出し方法については[読み取りセンサー](./id.md)を参照してください。
 
-## **トイオ・コレクション付属の各種カードやシート**
+## トイオ・コレクション付属の各種カードやシート <span class="new"/>
 
 各種アイテムと Standard ID の値の対応は以下のとおりです。
 
@@ -50,7 +50,7 @@ original_id: info_standard_id
 | フィンガーストライク 1 人プレイ | ![フィンガーストライク１人プレイ](assets/id_mark_finger_strike_1p.svg)                                                                  | 3670088 | 0x00380048    |
 | フリームーブ                    | ![フリームーブ](assets/id_mark_free_move.svg)                                                                                           | 3670084 | 0x00380044    |
 
-## **toio コア キューブ（単体）付属の簡易カード**
+## toio コア キューブ（単体）付属の簡易カード <span class="new"/>
 
 簡易カードに記載されているマーク（数字、アルファベット、記号）と Standard ID の値の対応は以下のとおりです。数字（0〜9）とアルファベット（A〜Z）はそれぞれ連番になっています。
 

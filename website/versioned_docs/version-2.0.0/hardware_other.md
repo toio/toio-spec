@@ -1,7 +1,7 @@
 ---
-id: version-2.0.0-hardware_other
-title: 走行性能
-sidebar_label: 走行性能
+id: hardware_other
+title: "走行性能"
+sidebar_label: "走行性能"
 original_id: hardware_other
 ---
 

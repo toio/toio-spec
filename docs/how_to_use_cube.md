@@ -1,7 +1,8 @@
 ---
 id: how_to_use_cube
-title: キューブの使い方
-sidebar_label: キューブの使い方
+title: "キューブの使い方"
+sidebar_label: "キューブの使い方"
+original_id: how_to_use_cube
 ---
 
 ## 充電方法

@@ -1,7 +1,7 @@
 ---
-id: version-2.0.0-about
-title: このサイトについて
-sidebar_label: このサイトについて
+id: about
+title: "このサイトについて"
+sidebar_label: "このサイトについて"
 original_id: about
 ---
 

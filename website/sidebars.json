@@ -13,9 +13,9 @@
       "ble_communication_overview",
       "ble_how_to_communicate",
       {
-        "type": "subcategory",
+        "type": "category",
         "label": "各種機能",
-        "ids": [
+        "items": [
           "ble_id",
           "ble_sensor",
           "ble_high_precision_tilt_sensor",

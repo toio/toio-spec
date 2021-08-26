@@ -1,7 +1,7 @@
 ---
-id: version-2.1.0-info_position_id
-title: Position ID 一覧
-sidebar_label: 🔄 Position ID 一覧
+id: info_position_id
+title: 'Position ID 一覧'
+sidebar_label: '🔄 Position ID 一覧'
 original_id: info_position_id
 ---
 
@@ -12,7 +12,7 @@ original_id: info_position_id
 
 それぞれの詳細について以下に記載します。また、BLE 経由での情報の読み出し方法については[読み取りセンサー](./id.md)を参照してください。
 
-## **トイオ・コレクション付属のプレイマット**
+## トイオ・コレクション付属のプレイマット <span class="new"/>
 
 ![ID detection coordinate system](assets/id_position_id_coordinate.png)
 
@@ -21,7 +21,7 @@ original_id: info_position_id
 | 土俵の面         | 45          | 45          | 455         | 455         |
 | 色付きタイルの面 | 545         | 45          | 955         | 455         |
 
-## **toio コア キューブ（単体）付属の簡易プレイマット**
+## toio コア キューブ（単体）付属の簡易プレイマット <span class="new"/>
 
 ![toio コア キューブ（単体） 簡易プレイマット](assets/id_illust_cube_playmat.png)
 

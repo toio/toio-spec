@@ -1,7 +1,7 @@
 ---
-id: version-2.3.0-how_to_update_cube
-title: アップデートについて
-sidebar_label: 🔄 アップデートについて
+id: how_to_update_cube
+title: 'アップデートについて'
+sidebar_label: '🔄 アップデートについて'
 original_id: how_to_update_cube
 ---
 
@@ -13,7 +13,7 @@ original_id: how_to_update_cube
 
 キューブの通信仕様は BLE プロトコルバージョンでバージョン管理されます。お手持ちのキューブの BLE プロトコルバージョンは[設定 / BLE プロトコルバージョンの要求](configuration.md#ble-プロトコルバージョンの要求)で確認できます。
 
-### _バージョンの組み合わせ_
+### バージョンの組み合わせ <span class="update"/>
 
 システムソフトウェアのバージョンと、対応する BLE プロトコルバージョンの関係は以下のとおりです。
 
@@ -31,11 +31,11 @@ original_id: how_to_update_cube
 
 ### 更新された項目の表示
 
-表示しているバージョンにおいて、1 つ前のバージョンから変更された機能についてはサイドバーに更新マーク（🔄）が付きます。また、各ページ内の項目には<span new></span>や<span update></span>などのマークが付きますので参考にしてください。
+表示しているバージョンにおいて、1 つ前のバージョンから変更された機能についてはサイドバーに更新マーク（🔄）が付きます。また、各ページ内の項目には<span class="new"/>や<span class="update"/>などのマークが付きますので参考にしてください。
 
 ## 主なアップデート内容
 
-### **2021/07/19**
+### 2021/07/19 <span class="new"/>
 
 「[工作生物 ゲズンロイド](https://toio.io/titles/gesundroid.html)」に関する toio ID の情報を追加しました。
 
