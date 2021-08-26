@@ -1,7 +1,7 @@
 #!/bin/bash -u
 
 cd `git rev-parse --show-toplevel`
-\fd '.svg|.png' v2-website > images.list
+\fd '.svg|.png' website > images.list
 
 IMAGES=$(cat images.list)
 
