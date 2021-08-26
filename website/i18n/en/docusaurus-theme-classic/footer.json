@@ -1,0 +1,22 @@
+{
+  "copyright": {
+    "message": "Copyright © 2021 Sony Interactive Entertainment Inc.",
+    "description": "The footer copyright"
+  },
+  "link.item.label.はじめに": {
+    "message": "About",
+    "description": "The label for link はじめに in the footer"
+  },
+  "link.item.label.ハードウェアについて": {
+    "message": "Hardware specifications",
+    "description": "The label for link ハードウェア仕様 in the footer"
+  },
+  "link.item.label.通信仕様について": {
+    "message": "BLE protocol specifications",
+    "description": "The label for link 通信仕様 in the footer"
+  },
+  "link.item.label.ユーザー&ライブラリ": {
+    "message": "Users & Libraries",
+    "description": "The label for link 通信仕様 in the footer"
+  }
+}

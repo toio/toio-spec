@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "2.3.0",
+    "description": "The label for version 2.3.0"
+  },
+  "sidebar.docs.category.はじめに": {
+    "message": "About",
+    "description": "The label for category はじめに in sidebar docs"
+  },
+  "sidebar.docs.category.ハードウェア仕様": {
+    "message": "Hardware specifications",
+    "description": "The label for category ハードウェア仕様 in sidebar docs"
+  },
+  "sidebar.docs.category.通信仕様": {
+    "message": "Communication specifications",
+    "description": "The label for category 通信仕様 in sidebar docs"
+  },
+  "sidebar.docs.category.各種機能": {
+    "message": "Functions",
+    "description": "The label for category 各種機能 in sidebar docs"
+  }
+}
