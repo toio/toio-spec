@@ -26,7 +26,7 @@ The system software version corresponds to the BLE protocol version as follows.
 
 ## Updating the technical specifications
 
-The technical specifications for each BLE protocol version can be viewed on this website. The number to the right of "toio™ Core Cube Technical Specifications" in the upper left corner of the page indicates the BLE protocol version that corresponds to the specifications displayed. The version displayed can be changed and the details regarding what changes can be viewed under [Versions](https://toio.github.io/toio-spec/versions).
+The technical specifications for each BLE protocol version can be viewed on this website. The number in the upper right corner of the page indicates the BLE protocol version that corresponds to the specifications displayed. You can change the version by clicking on this number.
 
 ### Displaying updated items
 
