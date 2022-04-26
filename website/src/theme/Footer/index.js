@@ -114,15 +114,18 @@ function Footer() {
             )}
             <div>
               The document is licensed under{' '}
-              <Link class="footer__link-item" href="https://creativecommons.org/licenses/by/4.0/">
+              <Link
+                className="footer__link-item"
+                href="https://creativecommons.org/licenses/by/4.0/"
+              >
                 Creative Commons Attribution 4.0 International License
               </Link>
               .
             </div>
             <div>
-              The image is licensed under{' '}
+              The image and 3D data are licensed under{' '}
               <Link
-                class="footer__link-item"
+                className="footer__link-item"
                 href="https://creativecommons.org/licenses/by-nd/4.0/"
               >
                 Creative Commons Attribution-NoDerivatives 4.0 International License

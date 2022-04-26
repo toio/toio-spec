@@ -35,7 +35,11 @@ original_id: how_to_update_cube
 
 ## 主なアップデート内容
 
-### 2021/07/19 <span class="new"/>
+### 2022/04/27 <span class="new"/>
+
+キューブの[3D データ](hardware_shape.md#3d-データ)と[マウント形状](hardware_shape.md#マウント形状)を公開しました。
+
+### 2021/07/19
 
 「[工作生物 ゲズンロイド](https://toio.io/titles/gesundroid.html)」に関する toio ID の情報を追加しました。
 

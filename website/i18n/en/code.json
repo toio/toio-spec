@@ -35,6 +35,10 @@
     "message": "Communication specifications",
     "description": "link text to the software page"
   },
+  "homepage.feature.3dmodel.linkText": {
+    "message": "3D Model",
+    "description": "link text to the 3d model page"
+  },
   "trademarkNotice.title": {
     "message": "Trademark Notice",
     "description": "title of trademark notice page"

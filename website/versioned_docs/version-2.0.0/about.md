@@ -1,7 +1,7 @@
 ---
 id: about
-title: "このサイトについて"
-sidebar_label: "このサイトについて"
+title: 'このサイトについて'
+sidebar_label: 'このサイトについて'
 original_id: about
 ---
 
@@ -9,7 +9,7 @@ original_id: about
 
 このサイトでは toio を使って本格的なプログラミングをしたい方へ向けて、toio コア キューブ（以降キューブ）の技術仕様を公開します。このサイトで公開されている情報を用いて様々な方がキューブの新しい使い方や楽しいあそび方を発見・創造し、toio の世界が広がっていくことを期待しています。
 
-toio 製品概要や購入に関する情報については [toio 公式サイト](https://toio.io)をご覧ください。また、toio を初めてご利用になる前には [toio 使いかたガイド](https://support.toio.io/app/manual)をご覧ください。
+toio 製品概要や購入に関する情報については [toio 公式サイト](https://toio.io)をご覧ください。また、toio を初めてご利用になる前には[各種マニュアル](https://toio.io/manual)をご覧ください。
 
 ## ヘルプ
 

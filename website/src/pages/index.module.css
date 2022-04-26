@@ -6,24 +6,51 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+  padding: 0;
+  text-align: left;
   position: relative;
   overflow: hidden;
   background-color: #878788;
   color: white;
 }
 
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.heroBannerContainer {
+  display: flex;
+}
+
+.heroBannerInfo {
+  flex-grow: 1;
+  padding: 4rem 0;
 }
 
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
   gap: 8px;
+}
+
+.heroCubeView {
+  flex-basis: 300px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  min-width: 0;
+  min-height: 0;
+}
+
+@media screen and (max-width: 966px) {
+  .heroBanner {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .heroCubeView {
+    display: none;
+  }
 }
