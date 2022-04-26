@@ -8,7 +8,7 @@ sidebar_label: How to use the cube
 
 ![How to charge](assets/cube_basics_charging.svg)
 
-The cube can be charged by placing it on the console charger. For detailed instructions and how to check the remaining battery level of the cube, please refer to the [toio User Guide](https://support.toio.io/app/manual).
+The cube can be charged by placing it on the console charger or the charger for toio Core Cube. For detailed instructions and how to check the remaining battery level of the cube, please refer to the [manuals](https://toio.io/manual).
 
 ## How to power on and off
 

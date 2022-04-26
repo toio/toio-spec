@@ -8,7 +8,7 @@ sidebar_label: About this site
 
 This website covers the technical specifications of the toio Core Cube (hereafter referred to as "the cube") for those who look to use toio for expert programming. We hope the information published on this website will help in the discovery and creation of and create new ways to use and enjoy the cube and expand the world of toio.
 
-Visit the [official toio website](https://toio.io) for an overview of toio products and how to purchase these products. Before using toio for the first time, please also see the [toio User Guide](https://support.toio.io/app/manual).
+Visit the [official toio website](https://toio.io) for an overview of toio products and how to purchase these products. Before using toio for the first time, please also see the [manuals](https://toio.io/manual).
 
 ## Help
 
@@ -30,7 +30,7 @@ For general questions, please see or create questions tagged "toio" on Stack Ove
 
 ## License
 
-All documents on this site are licensed under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). All illustrations on this site are licensed under the [Creative Commons Attribution-ShareAlike 4.0 International Public License](https://creativecommons.org/licenses/by-nd/4.0/). Under these licenses users are free to use the contents of this website as they wish. Please include the following notation when reusing the content on this website.
+All documents on this site are licensed under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). All illustrations and 3D data on this site are licensed under the [Creative Commons Attribution-ShareAlike 4.0 International Public License](https://creativecommons.org/licenses/by-nd/4.0/). Under these licenses users are free to use the contents of this website as they wish. Please include the following notation when reusing the content on this website.
 
 ```text
 Original document by Sony Interactive Entertainment Inc. is licensed under CC BY 4.0.
@@ -39,7 +39,7 @@ https://creativecommons.org/licenses/by/4.0/
 ```
 
 ```text
-Original image by Sony Interactive Entertainment Inc. is licensed under CC BY-ND 4.0.
+Original image and 3D data by Sony Interactive Entertainment Inc. is licensed under CC BY-ND 4.0.
 https://github.com/toio/toio-spec
 https://creativecommons.org/licenses/by-nd/4.0/
 ```

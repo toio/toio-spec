@@ -1,7 +1,7 @@
 ---
 id: how_to_use_cube
-title: "キューブの使い方"
-sidebar_label: "キューブの使い方"
+title: 'キューブの使い方'
+sidebar_label: 'キューブの使い方'
 original_id: how_to_use_cube
 ---
 
@@ -9,7 +9,7 @@ original_id: how_to_use_cube
 
 ![How to charge](assets/cube_basics_charging.svg)
 
-キューブはコンソールの充電台に乗せることで充電できます。詳しい説明やキューブの電池残量の確認方法については [toio 使いかたガイド](https://support.toio.io/app/manual)をご覧ください。
+キューブはコンソールの充電台に乗せることで充電できます。詳しい説明やキューブの電池残量の確認方法については[各種マニュアル](https://toio.io/manual)をご覧ください。
 
 ## 電源の入れ方・切り方
 

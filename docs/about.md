@@ -1,7 +1,7 @@
 ---
 id: about
-title: "このサイトについて"
-sidebar_label: "このサイトについて"
+title: 'このサイトについて'
+sidebar_label: 'このサイトについて'
 original_id: about
 ---
 
@@ -9,7 +9,7 @@ original_id: about
 
 このサイトでは toio を使って本格的なプログラミングをしたい方へ向けて、toio コア キューブ（以降キューブ）の技術仕様を公開します。このサイトで公開されている情報を用いて様々な方がキューブの新しい使い方や楽しいあそび方を発見・創造し、toio の世界が広がっていくことを期待しています。
 
-toio 製品概要や購入に関する情報については [toio 公式サイト](https://toio.io)をご覧ください。また、toio を初めてご利用になる前には [toio 使いかたガイド](https://support.toio.io/app/manual)をご覧ください。
+toio 製品概要や購入に関する情報については [toio 公式サイト](https://toio.io)をご覧ください。また、toio を初めてご利用になる前には[各種マニュアル](https://toio.io/manual)をご覧ください。
 
 ## ヘルプ
 
@@ -32,7 +32,7 @@ toio の製品や各タイトルに関する質問については [toio サポ�
 
 ## ライセンス
 
-このサイトの文書はすべて [クリエイティブ・コモンズ表示 4.0 国際パブリック・ライセンス](https://creativecommons.org/licenses/by/4.0/)でライセンスされます。またこのサイトのイラストについてはすべて[クリエイティブ・コモンズ 表示-改変禁止 4.0 国際 パブリック・ライセンス](https://creativecommons.org/licenses/by-nd/4.0/)でライセンスされます。各ライセンスの下でユーザーの皆さんはご自由にお使いただけます。お使いいただく場合は、以下の表記を入れてください。
+このサイトの文書はすべて [クリエイティブ・コモンズ表示 4.0 国際パブリック・ライセンス](https://creativecommons.org/licenses/by/4.0/)でライセンスされます。またこのサイトのイラストと 3D データについてはすべて[クリエイティブ・コモンズ 表示-改変禁止 4.0 国際 パブリック・ライセンス](https://creativecommons.org/licenses/by-nd/4.0/)でライセンスされます。各ライセンスの下でユーザーの皆さんはご自由にお使いただけます。お使いいただく場合は、以下の表記を入れてください。
 
 ```text
 Original document by Sony Interactive Entertainment Inc., is licensed under CC BY 4.0.
@@ -41,7 +41,7 @@ https://creativecommons.org/licenses/by/4.0/
 ```
 
 ```text
-Original image by Sony Interactive Entertainment Inc., is licensed under CC BY-ND 4.0.
+Original image and 3D data by Sony Interactive Entertainment Inc., is licensed under CC BY-ND 4.0.
 https://github.com/toio/toio-spec
 https://creativecommons.org/licenses/by-nd/4.0/
 ```
