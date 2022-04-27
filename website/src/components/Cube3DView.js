@@ -1,4 +1,5 @@
 import BrowserOnly from '@docusaurus/BrowserOnly'
+import { ResizeObserver } from '@juggle/resize-observer'
 import { ContactShadows, Environment, OrbitControls, PerspectiveCamera } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React, { Suspense } from 'react'
@@ -11,7 +12,7 @@ export const Cube3DView = () => {
     <BrowserOnly fallback={null}>
       {() => {
         return (
-          <Canvas shadows>
+          <Canvas shadows resize={{ polyfill: ResizeObserver }}>
             <color attach="background" args={['#999']} />
             <Suspense fallback={null}>
               <CubeModel />
