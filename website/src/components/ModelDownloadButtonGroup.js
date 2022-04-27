@@ -1,7 +1,7 @@
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import React from 'react'
-import { useMediaQuery } from 'react-responsive'
 import { DownloadLink } from './DownloadButton'
+import styles from './ModelDownloadButtonGroup.module.css'
 
 const MODEL_LIST = [
   { label: 'FBX', path: '/model/toiocorecube_v003.fbx' },
@@ -12,9 +12,16 @@ const MODEL_LIST = [
 ]
 
 export const ModelDownloadButtonGroup = () => {
-  const isNarrow = useMediaQuery({ query: '(max-width: 1130px)' })
-
-  return isNarrow ? <DropDownButtonGroup /> : <SimpleButtonGroup />
+  return (
+    <>
+      <div className={styles.buttonGroupDropdown}>
+        <DropDownButtonGroup />
+      </div>
+      <div className={styles.buttonGroupSimple}>
+        <SimpleButtonGroup />
+      </div>
+    </>
+  )
 }
 
 const SimpleButtonGroup = () => {
