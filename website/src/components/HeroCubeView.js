@@ -1,4 +1,5 @@
 import BrowserOnly from '@docusaurus/BrowserOnly'
+import { ResizeObserver } from '@juggle/resize-observer'
 import {
   ContactShadows,
   Environment,
@@ -42,7 +43,7 @@ export const HeroCubeView = () => {
       {() => {
         return (
           <Suspense fallback={null}>
-            <Canvas shadows>
+            <Canvas shadows resize={{ polyfill: ResizeObserver }}>
               <Environment preset="city" />
               <PerspectiveCamera makeDefault position={[0, 0, 0.08]} near={0.01} />
               <ambientLight intensity={intensity / 3} />
