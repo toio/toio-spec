@@ -11,6 +11,8 @@ export const Cube3DView = () => {
   return (
     <BrowserOnly fallback={null}>
       {() => {
+        const UA = window.navigator.userAgent.toLowerCase()
+        const isIOS = UA.indexOf('iphone') !== -1 || UA.indexOf('ipad') !== -1
         return (
           <Canvas shadows resize={{ polyfill: ResizeObserver }}>
             <color attach="background" args={['#999']} />
@@ -33,9 +35,9 @@ export const Cube3DView = () => {
             />
             <OrbitControls
               enablePan={false}
-              enableZoom={true}
-              enableRotate={true}
-              autoRotate={true}
+              enableZoom={!isIOS}
+              enableRotate={!isIOS}
+              autoRotate={!isIOS}
               minDistance={0.035}
               maxDistance={0.5}
               target={[0, 0.01, 0]}
