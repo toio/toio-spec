@@ -1,0 +1,17 @@
+.buttonGroupSimple {
+  display: block;
+}
+
+.buttonGroupDropdown {
+  display: none;
+}
+
+@media screen and (max-width: 1130px) {
+  .buttonGroupSimple {
+    display: none;
+  }
+
+  .buttonGroupDropdown {
+    display: block;
+  }
+}
