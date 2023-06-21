@@ -4,11 +4,11 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import isInternalUrl from '@docusaurus/isInternalUrl'
 import Link from '@docusaurus/Link'
+import isInternalUrl from '@docusaurus/isInternalUrl'
 import { useThemeConfig } from '@docusaurus/theme-common'
 import useBaseUrl from '@docusaurus/useBaseUrl'
-import IconExternalLink from '@theme/IconExternalLink'
+import IconExternalLink from '@theme/Icon/ExternalLink'
 import ThemedImage from '@theme/ThemedImage'
 import clsx from 'clsx'
 import React from 'react'

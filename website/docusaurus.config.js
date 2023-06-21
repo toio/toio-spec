@@ -36,7 +36,10 @@ module.exports = {
         },
         blog: {},
         theme: {
-          customCss: '../src/css/customTheme.css',
+          customCss: [require.resolve('./src/css/customTheme.css')],
+        },
+        gtag: process.env.TRACKING_ID && {
+          trackingID: process.env.TRACKING_ID,
         },
       },
     ],
@@ -133,10 +136,6 @@ module.exports = {
         },
       ],
       copyright: 'Copyright © 2021 Sony Interactive Entertainment Inc.',
-      logo: {},
-    },
-    gtag: process.env.TRACKING_ID && {
-      trackingID: process.env.TRACKING_ID,
     },
     algolia: process.env.ALGOLIA_API_KEY && {
       apiKey: process.env.ALGOLIA_API_KEY,
