@@ -17,13 +17,13 @@
     "clear": "docusaurus clear"
   },
   "devDependencies": {
-    "cross-env": "^6.0.3",
+    "cross-env": "^7.0.3",
     "docusaurus-delete-version": "^0.1.1",
-    "dotenv": "^10.0.0"
+    "dotenv": "^16.3.1"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-beta.6",
-    "@docusaurus/preset-classic": "2.0.0-beta.6",
+    "@docusaurus/core": "2.4.1",
+    "@docusaurus/preset-classic": "2.4.1",
     "@juggle/resize-observer": "^3.4.0",
     "@react-three/drei": "^9.77.0",
     "@react-three/fiber": "^8.13.3",
