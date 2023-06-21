@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[5217],{7264:(e,n,t)=>{t.r(n),t.d(n,{default:()=>c});var l=t(9188),r=t(7294),a=function(){return r.createElement("h1",null,"Coming Soon")};const c=function(e){return r.createElement(l.Z,null,r.createElement("main",{className:"container margin-vert--lg text--center"},r.createElement(a,null)))}}}]);
