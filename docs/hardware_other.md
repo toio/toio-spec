@@ -1,7 +1,7 @@
 ---
 id: hardware_other
-title: "走行性能"
-sidebar_label: "走行性能"
+title: '各種性能'
+sidebar_label: '🔄 各種性能'
 original_id: hardware_other
 ---
 
@@ -17,3 +17,11 @@ original_id: hardware_other
 ## 積載重量
 
 最大積載重量は 200 グラムです。ただし、200 グラム以下であっても重心バランスによっては正しく走行しないことがあります。
+
+## バッテリー性能
+
+| 項目     | 内容               |
+| -------- | ------------------ |
+| 種類     | リチウムイオン電池 |
+| 公称電圧 | 3.7 V              |
+| 公称容量 | 260 mAh            |

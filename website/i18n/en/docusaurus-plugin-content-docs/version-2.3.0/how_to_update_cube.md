@@ -34,7 +34,11 @@ For the version displayed, any feature that has changed since the previous versi
 
 ## Major updates
 
-### 2022/04/27 <span class="new"/>
+### 2023/09/29 <span class="new"/>
+
+Added cube's [Battery](hardware_other.md#battery) information.
+
+### 2022/04/27
 
 Added cube's [3D model data](hardware_shape.md#3d-model) and information about [shapes of block attachment](hardware_shape.md#protruding-shapes-for-block-attachment).
 
