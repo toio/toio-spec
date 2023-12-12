@@ -102,6 +102,10 @@
             },
             {
               "type": "doc",
+              "id": "version-2.3.0/ble_serialized_information"
+            },
+            {
+              "type": "doc",
               "id": "version-2.3.0/ble_configuration"
             }
           ]

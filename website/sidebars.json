@@ -25,6 +25,7 @@
           "ble_motor",
           "ble_light",
           "ble_sound",
+          "ble_serialized_information",
           "ble_configuration"
         ]
       }
