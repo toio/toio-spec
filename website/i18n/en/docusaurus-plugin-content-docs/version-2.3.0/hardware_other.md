@@ -35,7 +35,14 @@ The longer pin is GND.
 
 ### Input voltage / Input current
 
-| Item          | Value |
-| ------------- | ----- |
+| Item          | Value  |
+| ------------- | ------ |
 | Input voltage | DC 5 V |
 | Input current | 0.3 A  |
+
+### Compatible receptacle connector
+
+| Item         | Value                           |
+| ------------ | ------------------------------- |
+| Manufacturer | Foxconn Interconnect Technology |
+| Part number  | BBRC2H1-B9603-7H                |
