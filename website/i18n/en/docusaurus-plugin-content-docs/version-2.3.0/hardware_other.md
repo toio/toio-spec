@@ -24,3 +24,18 @@ The maximum loading weight is 200 grams. However, even if the weight is less tha
 | Type             | Lithium-ion Polymer Battery |
 | Nominal Voltage  | 3.7 V                       |
 | Nominal Capacity | 260 mAh                     |
+
+## Charging connector
+
+### Polarity
+
+![Polarity of charging connector](assets/hardware_other_polarity.svg)
+
+The longer pin is GND.
+
+### Input voltage / Input current
+
+| Item          | Value |
+| ------------- | ----- |
+| Input voltage | DC 5V |
+| Input current | 0.3A  |
