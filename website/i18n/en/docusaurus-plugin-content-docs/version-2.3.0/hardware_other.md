@@ -37,5 +37,5 @@ The longer pin is GND.
 
 | Item          | Value |
 | ------------- | ----- |
-| Input voltage | DC 5V |
-| Input current | 0.3A  |
+| Input voltage | DC 5 V |
+| Input current | 0.3 A  |
