@@ -34,7 +34,11 @@ For the version displayed, any feature that has changed since the previous versi
 
 ## Major updates
 
-### 2023/09/29 <span class="new"/>
+### 2023/12/14
+
+Added cube's [Charging connector](hardware_other.md#charging-connector) information.
+
+### 2023/09/29
 
 Added cube's [Battery](hardware_other.md#battery) information.
 
