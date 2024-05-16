@@ -35,7 +35,14 @@ For the version displayed, any feature that has changed since the previous versi
 
 ## Major updates
 
-### 2024/03/18 <span class="new"/>
+### 2024/04/14 <span class="new"/>
+
+Fixed the example value.
+
+- [Posture Angle detection](ble_high_precision_tilt_sensor)
+  - Fixed [the value of notification by high precision Euler angle](ble_high_precision_tilt_sensor#obtaining-posture-angle-information-notifications-in-high-precision-euler-angles-)
+
+### 2024/03/18
 
 Added information on the cube's system software v02.0006 (BLE protocol version v2.4.0).
 
@@ -45,8 +52,8 @@ Added information on the cube's system software v02.0006 (BLE protocol version v
   - **BREAKING CHANGE:** Changed [the local name specifications](ble_communication_overview#complete-local-name-and-shortened-local-name-)
 - [Posture Angle detection](ble_high_precision_tilt_sensor)
   - Added specifiable values to [request posture angle detection](ble_high_precision_tilt_sensor#requesting-posture-angle-detection)
-  - Added [the notification by quaternion](ble_high_precision_tilt_sensor#obtaining-posture-angle-information-notifications-in-quaternions)
-  - Added [the notification by high precision Euler angle](ble_high_precision_tilt_sensor#obtaining-posture-angle-information-notifications-in-high-precision-euler-angles)
+  - Added [the notification by quaternion](ble_high_precision_tilt_sensor#obtaining-posture-angle-information-notifications-in-quaternions-)
+  - Added [the notification by high precision Euler angle](ble_high_precision_tilt_sensor#obtaining-posture-angle-information-notifications-in-high-precision-euler-angles-)
 - [Configuration](ble_configuration)
   - Added specifiable values to [posture angle detection settings](ble_configuration#posture-angle-detection-settings-)
   - Added the operation to [request to change connection interval](ble_configuration#request-to-change-connection-interval-)

@@ -103,13 +103,13 @@ The value range is -1.0 to 1.0.
 
 The following data can be obtained when the type of notification content is set to high precision Euler angle notifications.
 
-| Data location | Type    | Content           | Example                                                           |
-| ------------- | ------- | ----------------- | ----------------------------------------------------------------- |
-| 0             | UInt8   | Information type  | <span class="fixed">`0x03`</span> (Posture angle detection)       |
-| 1             | UInt8   | Notification type | <span class="fixed">`0x01`</span> (Notifications in Euler angles) |
-| 2             | Float32 | Roll (X axis)     | `0x00003443` (180.0 degree)                                       |
-| 4             | Float32 | Pitch (Y axis)    | `0x00000000` (0.0 degree)                                         |
-| 6             | Float32 | Yaw (Z axis)      | `0x00000000` (0.0 degree)                                         |
+| Data location | Type    | Content           | Example                                                                          |
+| ------------- | ------- | ----------------- | -------------------------------------------------------------------------------- |
+| 0             | UInt8   | Information type  | <span class="fixed">`0x03`</span> (Posture angle detection)                      |
+| 1             | UInt8   | Notification type | <span class="fixed">`0x03`</span> (Notifications in high precision Euler angles) |
+| 2             | Float32 | Roll (X axis)     | `0x00003443` (180.0 degree)                                                      |
+| 4             | Float32 | Pitch (Y axis)    | `0x00000000` (0.0 degree)                                                        |
+| 6             | Float32 | Yaw (Z axis)      | `0x00000000` (0.0 degree)                                                        |
 
 #### Angles
 

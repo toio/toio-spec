@@ -36,7 +36,14 @@ original_id: how_to_update_cube
 
 ## 主なアップデート内容
 
-### 2024/03/18 <span class="new"/>
+### 2024/04/14 <span class="new"/>
+
+記載されている値の間違いを修正しました。
+
+-   [姿勢角検出](ble_high_precision_tilt_sensor)
+    -   [高精度オイラー角での通知](ble_high_precision_tilt_sensor#姿勢角情報の取得高精度オイラー角での通知-)に記載されている値の間違いを修正しました。
+
+### 2024/03/18
 
 キューブのシステムソフトウェア v02.0006（BLE プロトコルバージョン v2.4.0）に関する情報を追加しました。
 
