@@ -234,6 +234,10 @@ The cube requests the Central device to change the connection interval by writin
 If the Central device accepts the change request, the connection interval is changed.
 If the Central device responds to the change request, the connection interval is changed.
 
+See [Responses to request to change connection interval](#responses-to-request-to-change-connection-interval-) for how to obtain setting results.
+
+See [Obtaining the actual connection interval value](#obtaining-the-actual-connection-interval-value-) for how to obtain actual connection interval value.
+
 :::note
 
 The connection interval value is determined by the central device.
@@ -266,6 +270,8 @@ If the requested connection interval value is obtained without a
 [Request to change connection interval](#Request-to-change-connection-interval-),
 0x08 (as minimum value) and 0x50 (as maximum value) can be obtained.
 
+See [Responses to obtain the requested connection interval value](#responses-to-obtain-the-requested-connection-interval-value-) for how to obtain setting results.
+
 | Data location | Type  | Content            | Example                                                                               |
 | ------------- | ----- | ------------------ | ------------------------------------------------------------------------------------- |
 | 0             | UInt8 | Configuration type | <span class="fixed">`0x31`</span> (Obtaining the requested connection interval value) |
@@ -277,6 +283,8 @@ Get the actual connection interval value between the cube and the central device
 
 You can check if the connection interval was changed as requested by comparing this value with the requested value set in the
 [Request to change connection interval](#Request-to-change-connection-interval-).
+
+See [Responses to obtain the actual connection interval value](#responses-to-obtain-the-actual-connection-interval-value-) for how to obtain setting results.
 
 | Data location | Type  | Content            | Example                                                                             |
 | ------------- | ----- | ------------------ | ----------------------------------------------------------------------------------- |
@@ -414,12 +422,11 @@ If [Obtaining the requested connection interval value](#Obtaining-the-requested-
 
 If [Obtaining the actual connection interval value](#Obtaining-the-actual-connection-interval-value-) is written, the following responses are obtained depending on the result.
 
-| Data location | Type   | Content            | Example                                                                                      |
-| ------------- | ------ | ------------------ | -------------------------------------------------------------------------------------------- |
-| 0             | UInt8  | Configuration type | <span class="fixed">`0xb2`</span> (Responses to obtain the actual connection interval value) |
-| 1             | UInt8  | Reserved           | `0x00`                                                                                       |
-| 2             | UInt16 | minimum value      | `0x0008` (10 milliseconds)                                                                   |
-| 4             | UInt16 | maximum value      | `0x0050` (100 milliseconds)                                                                  |
+| Data location | Type   | Content                   | Example                                                                                      |
+| ------------- | ------ | ------------------------- | -------------------------------------------------------------------------------------------- |
+| 0             | UInt8  | Configuration type        | <span class="fixed">`0xb2`</span> (Responses to obtain the actual connection interval value) |
+| 1             | UInt8  | Reserved                  | `0x00`                                                                                       |
+| 2             | UInt16 | Connection interval value | `0x0008` (10 milliseconds)                                                                   |
 
 ## Notifications
 
