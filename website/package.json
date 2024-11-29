@@ -25,12 +25,12 @@
     "@docusaurus/core": "2.4.1",
     "@docusaurus/preset-classic": "2.4.1",
     "@juggle/resize-observer": "^3.4.0",
-    "@react-three/drei": "^9.77.0",
-    "@react-three/fiber": "^8.13.3",
+    "@react-three/drei": "^9.117.3",
+    "@react-three/fiber": "^8.17.10",
     "buffer": "^6.0.3",
     "clsx": "^1.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "three": "^0.153.0"
+    "three": "^0.170.0"
   }
 }
