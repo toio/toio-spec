@@ -73,7 +73,7 @@ Added cube's [Battery](hardware_other.md#battery) information.
 
 ### 2022/04/27
 
-Added cube's [3D model data](hardware_shape.md#3d-model) and information about [shapes of block attachment](hardware_shape.md#protruding-shapes-for-block-attachment).
+Added cube's [3D model data](hardware_shape.mdx#3d-model) and information about [shapes of block attachment](hardware_shape.mdx#protruding-shapes-for-block-attachment).
 
 ### 2021/07/19
 
