@@ -6,7 +6,7 @@ import styles from './ModelDownloadButtonGroup.module.css'
 const MODEL_LIST = [
   { label: 'FBX', path: '/model/toiocorecube_v003.fbx' },
   { label: 'OBJ', path: '/model/toiocorecube_v003.obj.zip' },
-  { label: 'GLTF', path: '/model/toiocorecube_v003.gltf' },
+  { label: 'GLTF', path: '/model/toiocorecube_v003.glb' },
   { label: 'STL', path: '/model/toiocorecube_v001.stl' },
   { label: 'STP', path: '/model/toiocorecube_v001.stp' },
 ]
