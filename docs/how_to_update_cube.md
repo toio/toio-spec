@@ -81,7 +81,7 @@ original_id: how_to_update_cube
 
 ### 2022/04/27
 
-キューブの[3D データ](hardware_shape.md#3d-データ)と[マウント形状](hardware_shape.md#マウント形状)を公開しました。
+キューブの[3D データ](hardware_shape.mdx#3d-データ)と[マウント形状](hardware_shape.mdx#マウント形状)を公開しました。
 
 ### 2021/07/19
 
