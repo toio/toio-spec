@@ -40,29 +40,29 @@ original_id: how_to_update_cube
 
 記載されている値の間違いを修正しました。
 
--   [姿勢角検出](ble_high_precision_tilt_sensor)
-    -   [高精度オイラー角での通知](ble_high_precision_tilt_sensor#姿勢角情報の取得高精度オイラー角での通知-)に記載されている値の間違いを修正しました。
+- [姿勢角検出](ble_high_precision_tilt_sensor)
+  - [高精度オイラー角での通知](ble_high_precision_tilt_sensor#姿勢角情報の取得高精度オイラー角での通知-)に記載されている値の間違いを修正しました。
 
 ### 2024/03/18
 
 キューブのシステムソフトウェア v02.0006（BLE プロトコルバージョン v2.4.0）に関する情報を追加しました。
 
--   [キューブの使い方](how_to_use_cube)
-    -   [システム状態](how_to_use_cube#システム状態-)にtoio PlayGroundが追加されました。
--   [キューブの発見](ble_communication_overview#キューブの発見-)
-    -   **後方互換性のない重要な変更:** [Local Name](ble_communication_overview#complete-local-name-と-shortened-local-name-について-)の仕様を変更しました。
--   [姿勢角検出](ble_high_precision_tilt_sensor)
-    -   [姿勢角検検出の要求](ble_high_precision_tilt_sensor#姿勢角検出の要求)で指定可能な値が追加されました。
-    -   [クォータニオンでの通知](ble_high_precision_tilt_sensor#姿勢角情報の取得クォータニオンでの通知-)が追加されました。
-    -   [高精度オイラー角での通知](ble_high_precision_tilt_sensor#姿勢角情報の取得高精度オイラー角での通知-)が追加されました。
--   [設定](ble_configuration)
-    -   [姿勢角検出の設定](ble_configuration#姿勢角検出の設定-)で指定可能な値が追加されました。
-    -   [コネクションインターバル変更要求](ble_configuration#コネクションインターバル変更要求-)が追加されました。
-    -   [コネクションインターバル要求値の取得](ble_configuration#コネクションインターバル要求値の取得-)が追加されました。
-    -   [現在のコネクションインターバル値の取得](ble_configuration#現在のコネクションインターバル値の取得-)が追加されました。
-    -   [コネクションインターバル変更要求の応答](ble_configuration#コネクションインターバル変更要求の応答-)が追加されました。
-    -   [コネクションインターバル要求値の取得の応答](ble_configuration#コネクションインターバル要求値の取得の応答-)が追加されました。
-    -   [現在のコネクションインターバル値の取得の応答](ble_configuration#現在のコネクションインターバル値の取得の応答-)が追加されました。
+- [キューブの使い方](how_to_use_cube)
+  - [システム状態](how_to_use_cube#システム状態-)に toio PlayGround が追加されました。
+- [キューブの発見](ble_communication_overview#キューブの発見-)
+  - **後方互換性のない重要な変更:** [Local Name](ble_communication_overview#complete-local-name-と-shortened-local-name-について-)の仕様を変更しました。
+- [姿勢角検出](ble_high_precision_tilt_sensor)
+  - [姿勢角検検出の要求](ble_high_precision_tilt_sensor#姿勢角検出の要求)で指定可能な値が追加されました。
+  - [クォータニオンでの通知](ble_high_precision_tilt_sensor#姿勢角情報の取得クォータニオンでの通知-)が追加されました。
+  - [高精度オイラー角での通知](ble_high_precision_tilt_sensor#姿勢角情報の取得高精度オイラー角での通知-)が追加されました。
+- [設定](ble_configuration)
+  - [姿勢角検出の設定](ble_configuration#姿勢角検出の設定-)で指定可能な値が追加されました。
+  - [コネクションインターバル変更要求](ble_configuration#コネクションインターバル変更要求-)が追加されました。
+  - [コネクションインターバル要求値の取得](ble_configuration#コネクションインターバル要求値の取得-)が追加されました。
+  - [現在のコネクションインターバル値の取得](ble_configuration#現在のコネクションインターバル値の取得-)が追加されました。
+  - [コネクションインターバル変更要求の応答](ble_configuration#コネクションインターバル変更要求の応答-)が追加されました。
+  - [コネクションインターバル要求値の取得の応答](ble_configuration#コネクションインターバル要求値の取得の応答-)が追加されました。
+  - [現在のコネクションインターバル値の取得の応答](ble_configuration#現在のコネクションインターバル値の取得の応答-)が追加されました。
 
 ### 2023/12/14
 
@@ -72,8 +72,8 @@ original_id: how_to_update_cube
 
 キューブのシステムソフトウェア v02.0005（BLE プロトコルバージョン v2.3.0）に関する情報を追加しました。
 
--   シリアライズ情報に関する機能の追加
-    -   [シリアライズ情報に関する通信仕様](serialized_information.md)
+- シリアライズ情報に関する機能の追加
+  - [シリアライズ情報に関する通信仕様](serialized_information.md)
 
 ### 2023/09/29
 
@@ -81,66 +81,66 @@ original_id: how_to_update_cube
 
 ### 2022/04/27
 
-キューブの[3D データ](hardware_shape.md#3d-データ)と[マウント形状](hardware_shape.md#マウント形状)を公開しました。
+キューブの[3D データ](hardware_shape.mdx#3d-データ)と[マウント形状](hardware_shape.mdx#マウント形状)を公開しました。
 
 ### 2021/07/19
 
 「[工作生物 ゲズンロイド](https://toio.io/titles/gesundroid.html)」に関する toio ID の情報を追加しました。
 
--   [工作生物 ゲズンロイド付属のプレイマット](info_position_id.md#工作生物nbspゲズンロイド付属のプレイマット)に関する情報を追加
+- [工作生物 ゲズンロイド付属のプレイマット](info_position_id.md#工作生物nbspゲズンロイド付属のプレイマット)に関する情報を追加
 
 ### 2021/04/21
 
 キューブのシステムソフトウェア v02.0005（BLE プロトコルバージョン v2.3.0）に関する情報を追加しました。
 
--   アドバタイズ情報（Complete Local Name）の変更
-    -   [通信概要](ble_communication_overview.md#キューブの発見)
--   姿勢角検出に関する機能の追加
-    -   [姿勢角検出の取得に関する通信仕様](high_precision_tilt_sensor.md)
--   磁気センサーに関する機能の追加
-    -   [磁気センサー情報の取得に関する通信仕様](magnetic_sensor.md)
+- アドバタイズ情報（Complete Local Name）の変更
+  - [通信概要](ble_communication_overview.md#キューブの発見)
+- 姿勢角検出に関する機能の追加
+  - [姿勢角検出の取得に関する通信仕様](high_precision_tilt_sensor.md)
+- 磁気センサーに関する機能の追加
+  - [磁気センサー情報の取得に関する通信仕様](magnetic_sensor.md)
 
 ### 2020/09/30
 
 キューブのシステムソフトウェア v02.0004（BLE プロトコルバージョン v2.2.0）に関する情報を追加しました。
 
--   [電池残量の確認方法](how_to_use_cube.md#電池残量の確認)の追加
--   読み取りセンサーの通知頻度設定の追加
-    -   [読み取りセンサーの ID 通知設定](configuration.md#読み取りセンサーの-id-通知設定)
-    -   [読み取りセンサーの ID missed 通知設定](configuration.md#読み取りセンサーの-id-missed-通知設定)
--   [シェイク検出](sensor.md#シェイク検出)の追加
--   磁気センサーに関する機能の追加
-    -   [磁気センサーに関するハードウェア仕様](hardware_magnet.md)
-    -   [磁気センサー情報の取得に関する通信仕様](magnetic_sensor.md)
-    -   [磁気センサーの有効化](configuration.md#磁気センサーの設定)
--   モーターの速度情報に関する機能の追加
-    -   [モーターの速度情報の取得](motor.md#モーターの速度情報の取得)
-    -   [モーターの速度情報の取得の有効化](configuration.md#モーターの速度情報の取得の設定)
--   toio ID の情報を通信仕様からハードウェア仕様へ移動
-    -   [Position ID 一覧](info_position_id.md)
-    -   [Standard ID 一覧](info_standard_id.md)
--   「[トイオ・コレクション 拡張パック](https://toio.io/titles/toio-collection-extension.html)」「[おんがくであそぼう ピコトンズ](https://toio.io/titles/picotons.html)」に関する toio ID の情報を追加
-    -   [Standard ID 一覧 - トイオ・コレクション 拡張パック](info_standard_id.md#トイオ・コレクション-拡張パックに付属する読み取りマーク)
-    -   [Position ID 一覧 - おんがくであそぼう ピコトンズ](info_position_id.md#おんがくであそぼうnbspピコトンズ付属のマット)
+- [電池残量の確認方法](how_to_use_cube.md#電池残量の確認)の追加
+- 読み取りセンサーの通知頻度設定の追加
+  - [読み取りセンサーの ID 通知設定](configuration.md#読み取りセンサーの-id-通知設定)
+  - [読み取りセンサーの ID missed 通知設定](configuration.md#読み取りセンサーの-id-missed-通知設定)
+- [シェイク検出](sensor.md#シェイク検出)の追加
+- 磁気センサーに関する機能の追加
+  - [磁気センサーに関するハードウェア仕様](hardware_magnet.md)
+  - [磁気センサー情報の取得に関する通信仕様](magnetic_sensor.md)
+  - [磁気センサーの有効化](configuration.md#磁気センサーの設定)
+- モーターの速度情報に関する機能の追加
+  - [モーターの速度情報の取得](motor.md#モーターの速度情報の取得)
+  - [モーターの速度情報の取得の有効化](configuration.md#モーターの速度情報の取得の設定)
+- toio ID の情報を通信仕様からハードウェア仕様へ移動
+  - [Position ID 一覧](info_position_id.md)
+  - [Standard ID 一覧](info_standard_id.md)
+- 「[トイオ・コレクション 拡張パック](https://toio.io/titles/toio-collection-extension.html)」「[おんがくであそぼう ピコトンズ](https://toio.io/titles/picotons.html)」に関する toio ID の情報を追加
+  - [Standard ID 一覧 - トイオ・コレクション 拡張パック](info_standard_id.md#トイオ・コレクション-拡張パックに付属する読み取りマーク)
+  - [Position ID 一覧 - おんがくであそぼう ピコトンズ](info_position_id.md#おんがくであそぼうnbspピコトンズ付属のマット)
 
 ### 2020/04/23
 
 toio コア キューブ（単体）に付属する簡易プレイマットと簡易カードに関する情報を追加しました。
 
--   toio ID の情報一覧を[Position ID 一覧](info_position_id.md)と[Standard ID 一覧](info_standard_id.md)に移動
--   toio コア キューブ（単体）に付属する[簡易プレイマット](info_position_id.md#toio-コア-キューブ（単体）付属の簡易プレイマット)と[簡易カード](info_standard_id.md#toio-コア-キューブ（単体）付属の簡易カード)に関する情報を追加
+- toio ID の情報一覧を[Position ID 一覧](info_position_id.md)と[Standard ID 一覧](info_standard_id.md)に移動
+- toio コア キューブ（単体）に付属する[簡易プレイマット](info_position_id.md#toio-コア-キューブ（単体）付属の簡易プレイマット)と[簡易カード](info_standard_id.md#toio-コア-キューブ（単体）付属の簡易カード)に関する情報を追加
 
 ### 2019/11/13
 
 BLE プロトコルバージョン v2.1.0 では以下のような内容の変更・追加があります。
 
--   [ダブルタップ検出・姿勢検出](sensor.md#検出)の追加
--   [モーターの速度指示値](motor.md#モーターの速度指示値)の有効範囲の拡大
-    -   速度指示値の最大値が`100`から`115`になり、より速い動作が可能になります
-    -   速度指示値の最小値が`10`から`8`になり、よりゆっくりとした動作が可能になります
--   モーター制御のバリエーションの追加
-    -   [目標指定付きモーター制御](motor.md#目標指定付きモーター制御)
-    -   [複数目標指定付きモーター制御](motor.md#複数目標指定付きモーター制御)
-    -   [加速度指定付きモーター制御](motor.md#加速度指定付きモーター制御)
+- [ダブルタップ検出・姿勢検出](sensor.md#検出)の追加
+- [モーターの速度指示値](motor.md#モーターの速度指示値)の有効範囲の拡大
+  - 速度指示値の最大値が`100`から`115`になり、より速い動作が可能になります
+  - 速度指示値の最小値が`10`から`8`になり、よりゆっくりとした動作が可能になります
+- モーター制御のバリエーションの追加
+  - [目標指定付きモーター制御](motor.md#目標指定付きモーター制御)
+  - [複数目標指定付きモーター制御](motor.md#複数目標指定付きモーター制御)
+  - [加速度指定付きモーター制御](motor.md#加速度指定付きモーター制御)
 
 詳しい仕様はこのサイトで記載していますが、[toio blog](https://toio.io/blog/) でも一部解説していく予定ですのでそちらも参考にしてください。
