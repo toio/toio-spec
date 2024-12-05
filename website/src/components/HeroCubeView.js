@@ -1,12 +1,6 @@
 import BrowserOnly from '@docusaurus/BrowserOnly'
 import { ResizeObserver } from '@juggle/resize-observer'
-import {
-  ContactShadows,
-  Environment,
-  Float,
-  PerspectiveCamera,
-  useContextBridge,
-} from '@react-three/drei'
+import { ContactShadows, Float, PerspectiveCamera, useContextBridge } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React, { Suspense, useContext, useEffect, useState } from 'react'
 import { CubeContext } from '../cube/context'
@@ -44,19 +38,11 @@ export const HeroCubeView = () => {
         return (
           <Suspense fallback={null}>
             <Canvas shadows resize={{ polyfill: ResizeObserver }}>
-              <Environment preset="city" />
-              <PerspectiveCamera makeDefault position={[0, 0, 0.08]} near={0.01} />
-              <ambientLight intensity={intensity / 3} />
-              <spotLight
-                penumbra={1}
-                position={[radius, radius * 2, radius]}
-                intensity={intensity * 2}
-                castShadow
-              />
-              <pointLight
-                position={[radius * -2, radius * -0.5, radius * -2]}
-                intensity={intensity}
-              />
+              <PerspectiveCamera makeDefault position={[0, 0, 0.08]} near={0.01}>
+                <directionalLight position={[0, 0, 5]} intensity={3} />
+              </PerspectiveCamera>
+              <ambientLight intensity={0.1} />
+
               <group
                 onDoubleClick={() => {
                   if (navigator.bluetooth === undefined) {
