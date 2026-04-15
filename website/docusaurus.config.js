@@ -22,7 +22,11 @@ module.exports = {
     },
   },
   onBrokenLinks: 'log',
-  onBrokenMarkdownLinks: 'log',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'log',
+    },
+  },
   presets: [
     [
       '@docusaurus/preset-classic',
