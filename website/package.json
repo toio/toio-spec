@@ -22,6 +22,7 @@
     "dotenv": "^16.3.1"
   },
   "overrides": {
+    "serialize-javascript": "7.0.5",
     "webpackbar": "7.0.0"
   },
   "dependencies": {
