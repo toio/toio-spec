@@ -1,16 +1,16 @@
 {
-  "version-2.0.0/docs": [
+  "docs": [
     {
       "type": "category",
       "label": "はじめに",
       "items": [
         {
           "type": "doc",
-          "id": "version-2.0.0/about"
+          "id": "about"
         },
         {
           "type": "doc",
-          "id": "version-2.0.0/how_to_use_cube"
+          "id": "how_to_use_cube"
         }
       ]
     },
@@ -20,15 +20,15 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-2.0.0/hardware_components"
+          "id": "hardware_components"
         },
         {
           "type": "doc",
-          "id": "version-2.0.0/hardware_shape"
+          "id": "hardware_shape"
         },
         {
           "type": "doc",
-          "id": "version-2.0.0/hardware_other"
+          "id": "hardware_other"
         }
       ]
     },
@@ -38,11 +38,11 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-2.0.0/ble_communication_overview"
+          "id": "ble_communication_overview"
         },
         {
           "type": "doc",
-          "id": "version-2.0.0/ble_how_to_communicate"
+          "id": "ble_how_to_communicate"
         },
         {
           "type": "category",
@@ -50,35 +50,35 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-2.0.0/ble_id"
+              "id": "ble_id"
             },
             {
               "type": "doc",
-              "id": "version-2.0.0/ble_sensor"
+              "id": "ble_sensor"
             },
             {
               "type": "doc",
-              "id": "version-2.0.0/ble_button"
+              "id": "ble_button"
             },
             {
               "type": "doc",
-              "id": "version-2.0.0/ble_battery"
+              "id": "ble_battery"
             },
             {
               "type": "doc",
-              "id": "version-2.0.0/ble_motor"
+              "id": "ble_motor"
             },
             {
               "type": "doc",
-              "id": "version-2.0.0/ble_light"
+              "id": "ble_light"
             },
             {
               "type": "doc",
-              "id": "version-2.0.0/ble_sound"
+              "id": "ble_sound"
             },
             {
               "type": "doc",
-              "id": "version-2.0.0/ble_configuration"
+              "id": "ble_configuration"
             }
           ]
         }
