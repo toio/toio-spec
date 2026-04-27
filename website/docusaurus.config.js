@@ -48,7 +48,7 @@ module.exports = {
       },
     ],
   ],
-  plugins: [],
+  plugins: ['docusaurus-plugin-version-diff-sign'],
   themeConfig: {
     navbar: {
       title: 'toio™コア キューブ 技術仕様',

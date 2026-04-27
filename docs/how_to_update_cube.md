@@ -1,8 +1,11 @@
 ---
 id: how_to_update_cube
 title: 'アップデートについて'
-sidebar_label: '🔄 アップデートについて'
+sidebar_label: 'アップデートについて'
 original_id: how_to_update_cube
+versionDiff:
+  headings:
+    20240318: none
 ---
 
 ## キューブのアップデートについて
@@ -13,7 +16,7 @@ original_id: how_to_update_cube
 
 キューブの通信仕様は BLE プロトコルバージョンでバージョン管理されます。お手持ちのキューブの BLE プロトコルバージョンは[設定 / BLE プロトコルバージョンの要求](configuration.md#ble-プロトコルバージョンの要求)で確認できます。
 
-### バージョンの組み合わせ <span class="update"/>
+### バージョンの組み合わせ
 
 システムソフトウェアのバージョンと、対応する BLE プロトコルバージョンの関係は以下のとおりです。
 
@@ -33,7 +36,7 @@ original_id: how_to_update_cube
 
 ### 更新された項目の表示
 
-表示しているバージョンにおいて、1 つ前のバージョンから変更された機能についてはサイドバーに更新マーク（🔄）が付きます。また、各ページ内の項目には<span class="new"/>や<span class="update"/>などのマークが付きますので参考にしてください。
+表示しているバージョンにおいて、1 つ前のバージョンから変更された機能についてはサイドバーと各ページの目次に <span className="version-diff-sign is-dot is-updated" /> が付きます。また、各ページ内には <span className="version-diff-sign is-pill is-new">NEW</span> や <span className="version-diff-sign is-pill is-updated">UPDATED</span> などのマークが付きますので参考にしてください。
 
 ## 主なアップデート内容
 
