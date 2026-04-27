@@ -8,7 +8,7 @@ original_id: hardware_position_id
 以下に挙げる商品には Position ID が印刷されています。
 
 - [トイオ・コレクション](https://toio.io/titles/toio-collection.html)に付属するプレイマット
-- [おんがくであそぼう ピコトンズ](https://toio.io/titles/picotons.html)に付属する「えんそう」マットよび「そうさ／オートプレイ」マット
+- [おんがくであそぼう ピコトンズ](https://toio.io/titles/picotons.html)に付属する「えんそう」マットおよび「そうさ／オートプレイ」マット
 - [toio コア キューブ（単体）](https://toio.io/cube/)に付属する簡易プレイマット
 
 それぞれの詳細について以下に記載します。また、BLE 経由での情報の読み出し方法については[読み取りセンサー](./id.md)を参照してください。

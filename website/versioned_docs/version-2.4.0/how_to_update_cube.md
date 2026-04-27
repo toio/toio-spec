@@ -52,7 +52,7 @@ original_id: how_to_update_cube
 - [キューブの発見](ble_communication_overview#キューブの発見-)
   - **後方互換性のない重要な変更:** [Local Name](ble_communication_overview#complete-local-name-と-shortened-local-name-について-)の仕様を変更しました。
 - [姿勢角検出](ble_high_precision_tilt_sensor)
-  - [姿勢角検検出の要求](ble_high_precision_tilt_sensor#姿勢角検出の要求)で指定可能な値が追加されました。
+  - [姿勢角検出の要求](ble_high_precision_tilt_sensor#姿勢角検出の要求)で指定可能な値が追加されました。
   - [クォータニオンでの通知](ble_high_precision_tilt_sensor#姿勢角情報の取得クォータニオンでの通知-)が追加されました。
   - [高精度オイラー角での通知](ble_high_precision_tilt_sensor#姿勢角情報の取得高精度オイラー角での通知-)が追加されました。
 - [設定](ble_configuration)

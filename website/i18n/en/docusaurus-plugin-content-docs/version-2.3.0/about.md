@@ -30,7 +30,7 @@ For general questions, please see or create questions tagged "toio" on Stack Ove
 
 ## License
 
-All documents on this site are licensed under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). All illustrations and 3D data on this site are licensed under the [Creative Commons Attribution-ShareAlike 4.0 International Public License](https://creativecommons.org/licenses/by-nd/4.0/). Under these licenses users are free to use the contents of this website as they wish. Please include the following notation when reusing the content on this website.
+All documents on this site are licensed under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). All illustrations and 3D data on this site are licensed under the [Creative Commons Attribution-NoDerivatives 4.0 International Public License](https://creativecommons.org/licenses/by-nd/4.0/). Under these licenses users are free to use the contents of this website as they wish. Please include the following notation when reusing the content on this website.
 
 ```text
 Original document by Sony Interactive Entertainment Inc. is licensed under CC BY 4.0.

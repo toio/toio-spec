@@ -44,6 +44,6 @@ For write operations, the following cases are determined errors.
 When there is an error, the write operation is discarded and does not affect the operation of the cube.
 
 - When the full data length is different from the specified length
-- When the data value is out side the specified range
+- When the data value is outside the specified range
 
 If there are other cases of errors, they are listed as notes for each characteristic.
