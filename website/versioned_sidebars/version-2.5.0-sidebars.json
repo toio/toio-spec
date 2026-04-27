@@ -1,0 +1,124 @@
+{
+  "docs": [
+    {
+      "type": "category",
+      "label": "はじめに",
+      "collapsed": false,
+      "items": [
+        {
+          "type": "doc",
+          "id": "about"
+        },
+        {
+          "type": "doc",
+          "id": "how_to_use_cube"
+        },
+        {
+          "type": "doc",
+          "id": "how_to_update_cube"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "ハードウェア仕様",
+      "collapsed": false,
+      "items": [
+        {
+          "type": "doc",
+          "id": "hardware_components"
+        },
+        {
+          "type": "doc",
+          "id": "hardware_shape"
+        },
+        {
+          "type": "doc",
+          "id": "hardware_other"
+        },
+        {
+          "type": "doc",
+          "id": "hardware_position_id"
+        },
+        {
+          "type": "doc",
+          "id": "hardware_standard_id"
+        },
+        {
+          "type": "doc",
+          "id": "hardware_magnet"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "通信仕様",
+      "collapsed": false,
+      "items": [
+        {
+          "type": "doc",
+          "id": "ble_communication_overview"
+        },
+        {
+          "type": "doc",
+          "id": "ble_how_to_communicate"
+        },
+        {
+          "type": "category",
+          "label": "各種機能",
+          "items": [
+            {
+              "type": "doc",
+              "id": "ble_id"
+            },
+            {
+              "type": "doc",
+              "id": "ble_sensor"
+            },
+            {
+              "type": "doc",
+              "id": "ble_high_precision_tilt_sensor"
+            },
+            {
+              "type": "doc",
+              "id": "ble_magnetic_sensor"
+            },
+            {
+              "type": "doc",
+              "id": "ble_button"
+            },
+            {
+              "type": "doc",
+              "id": "ble_battery"
+            },
+            {
+              "type": "doc",
+              "id": "ble_motor"
+            },
+            {
+              "type": "doc",
+              "id": "ble_light"
+            },
+            {
+              "type": "doc",
+              "id": "ble_sound"
+            },
+            {
+              "type": "doc",
+              "id": "ble_serialized_information"
+            },
+            {
+              "type": "doc",
+              "id": "ble_configuration"
+            },
+            {
+              "type": "doc",
+              "id": "ble_savable_configuration"
+            }
+          ],
+          "collapsed": false
+        }
+      ]
+    }
+  ]
+}
