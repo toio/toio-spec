@@ -1,7 +1,7 @@
 ---
 id: how_to_use_cube
 title: 'キューブの使い方'
-sidebar_label: '🔄 キューブの使い方'
+sidebar_label: 'キューブの使い方'
 original_id: how_to_use_cube
 ---
 
@@ -9,7 +9,7 @@ original_id: how_to_use_cube
 
 ![How to charge](assets/cube_basics_charging.svg)
 
-キューブはコンソールの充電台またはキューブ専用充電器に乗せることで充電できます。詳しい説明やキューブの電池残量の確認方法については[各種マニュアル](https://toio.io/manual)をご覧ください。
+キューブはキューブ専用充電器またはコンソールの充電台に乗せることで充電できます。詳しい説明やキューブの電池残量の確認方法については[各種マニュアル](https://toio.io/manual)をご覧ください。
 
 ## 電源の入れ方・切り方
 
@@ -24,7 +24,7 @@ original_id: how_to_use_cube
 
 キューブとの通信に関しては[通信概要 - キューブとの通信について](ble_communication_overview.md#キューブとの通信について)をご覧ください。
 
-## システム状態 <span class="update"/>
+## システム状態
 
 ![Light of cube](assets/cube_basics_light.svg)
 
@@ -37,19 +37,19 @@ original_id: how_to_use_cube
 | 接続            | 消灯                                           | ○ 音あり |
 | 切断            | 消灯                                           | ○ 音あり |
 | 終了            | 消灯                                           | ○ 音あり |
-| toio PlayGround | 黄色点滅                                       | ○ 音あり |
+| トイオ・プレイグラウンド | 黄色・緑色点滅                                 | ○ 音あり |
 
-### toio PlayGround（黄色点滅）について <span class="new"/>
+### トイオ・プレイグラウンド（黄色・緑色点滅）について
 
-キューブが[toio PlayGround](https://toio.io/titles/playground.html)（黄色点滅）の状態では、キューブは外部からのBluetooth接続を受け入れません。
+キューブが[トイオ・プレイグラウンド](https://toio.io/titles/playground.html)（黄色・緑色点滅）の状態では、キューブは外部からのBluetooth接続を受け入れません。
 
-#### toio PlayGround への遷移
+#### トイオ・プレイグラウンドへの遷移
 
-キューブが接続待ち（青色点滅）の状態でボタンを長押しすると[toio PlayGround](https://toio.io/titles/playground.html)に遷移します。
+キューブが接続待ち（青色点滅）の状態で、機能ボタンを長押しやトイオ・プレイグラウンドの [カード](https://toio.io/playground/card.html) をタッチすると[トイオ・プレイグラウンド](https://toio.io/titles/playground.html)に遷移します。
 
-#### toio PlayGround からの復帰
+#### トイオ・プレイグラウンドからの復帰
 
-[toio PlayGround](https://toio.io/titles/playground.html)から通常の接続可能状態に戻るには、キューブの電源を一度オフにしてから再度オンしてください。
+[トイオ・プレイグラウンド](https://toio.io/titles/playground.html)から通常の接続可能状態に戻るには、キューブの電源を一度切ってから再度入れてください。
 
 ## 電池残量の確認
 
