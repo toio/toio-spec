@@ -5,6 +5,7 @@ module.exports = {
   tagline: 'The technical specifications for developers and creators',
   url: process.env.URL ?? 'https://toio.github.io',
   baseUrl: process.env.BASE_URL ?? '/toio-spec/',
+  trailingSlash: true,
   organizationName: process.env.ORGANIZATION_NAME ?? 'toio',
   projectName: 'toio-spec',
   scripts: ['https://buttons.github.io/buttons.js'],
@@ -48,7 +49,7 @@ module.exports = {
       },
     ],
   ],
-  plugins: [],
+  plugins: ['docusaurus-plugin-version-diff-sign'],
   themeConfig: {
     navbar: {
       title: 'toio™コア キューブ 技術仕様',
@@ -139,7 +140,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: 'Copyright © 2021 Sony Interactive Entertainment Inc.',
+      copyright: `© 2019-${new Date().getFullYear()} Sony Interactive Entertainment Inc.`,
     },
     algolia: process.env.ALGOLIA_API_KEY && {
       apiKey: process.env.ALGOLIA_API_KEY,

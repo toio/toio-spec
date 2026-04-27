@@ -16,7 +16,8 @@
           "type": "doc",
           "id": "how_to_update_cube"
         }
-      ]
+      ],
+      "collapsed": false
     },
     {
       "type": "category",
@@ -34,7 +35,8 @@
           "type": "doc",
           "id": "hardware_other"
         }
-      ]
+      ],
+      "collapsed": false
     },
     {
       "type": "category",
@@ -84,7 +86,8 @@
               "type": "doc",
               "id": "ble_configuration"
             }
-          ]
+          ],
+          "collapsed": false
         },
         {
           "type": "category",
@@ -98,9 +101,11 @@
               "type": "doc",
               "id": "info_standard_id"
             }
-          ]
+          ],
+          "collapsed": false
         }
-      ]
+      ],
+      "collapsed": false
     }
   ]
 }

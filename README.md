@@ -1,4 +1,4 @@
-# toio-sepc・toio&trade;Core Cube Technical Specification
+# toio-spec・toio&trade;Core Cube Technical Specification
 
 Technical specification document of toio&trade;Core Cube.
 

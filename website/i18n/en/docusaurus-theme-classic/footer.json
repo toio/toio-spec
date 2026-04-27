@@ -1,8 +1,4 @@
 {
-  "copyright": {
-    "message": "Copyright © 2021 Sony Interactive Entertainment Inc.",
-    "description": "The footer copyright"
-  },
   "link.item.label.はじめに": {
     "message": "About",
     "description": "The label for link はじめに in the footer"
