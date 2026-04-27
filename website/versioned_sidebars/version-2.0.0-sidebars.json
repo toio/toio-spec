@@ -12,7 +12,8 @@
           "type": "doc",
           "id": "how_to_use_cube"
         }
-      ]
+      ],
+      "collapsed": false
     },
     {
       "type": "category",
@@ -30,7 +31,8 @@
           "type": "doc",
           "id": "hardware_other"
         }
-      ]
+      ],
+      "collapsed": false
     },
     {
       "type": "category",
@@ -80,9 +82,11 @@
               "type": "doc",
               "id": "ble_configuration"
             }
-          ]
+          ],
+          "collapsed": false
         }
-      ]
+      ],
+      "collapsed": false
     }
   ]
 }

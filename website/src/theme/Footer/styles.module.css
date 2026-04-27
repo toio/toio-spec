@@ -13,3 +13,19 @@
 .footerLogoLink:hover {
   opacity: 1;
 }
+
+:global(.footer__link-item).footerLicenseLink {
+  display: inline;
+  width: auto;
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+@media (max-width: 996px) {
+  .footerBottomTextGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

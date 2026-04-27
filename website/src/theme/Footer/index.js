@@ -112,35 +112,37 @@ function Footer() {
                 )}
               </div>
             )}
-            <div>
-              The document is licensed under{' '}
-              <Link
-                className="footer__link-item"
-                href="https://creativecommons.org/licenses/by/4.0/"
-              >
-                Creative Commons Attribution 4.0 International License
-              </Link>
-              .
+            <div className={styles.footerBottomTextGroup}>
+              <div>
+                The document is licensed under{' '}
+                <Link
+                  className={clsx('footer__link-item', styles.footerLicenseLink)}
+                  href="https://creativecommons.org/licenses/by/4.0/"
+                >
+                  Creative Commons Attribution 4.0 International License
+                </Link>
+                .
+              </div>
+              <div>
+                The image and 3D data are licensed under{' '}
+                <Link
+                  className={clsx('footer__link-item', styles.footerLicenseLink)}
+                  href="https://creativecommons.org/licenses/by-nd/4.0/"
+                >
+                  Creative Commons Attribution-NoDerivatives 4.0 International License
+                </Link>
+                .
+              </div>
+              {copyright ? (
+                <div
+                  className="footer__copyright" // Developer provided the HTML, so assume it's safe.
+                  // eslint-disable-next-line react/no-danger
+                  dangerouslySetInnerHTML={{
+                    __html: copyright,
+                  }}
+                />
+              ) : null}
             </div>
-            <div>
-              The image and 3D data are licensed under{' '}
-              <Link
-                className="footer__link-item"
-                href="https://creativecommons.org/licenses/by-nd/4.0/"
-              >
-                Creative Commons Attribution-NoDerivatives 4.0 International License
-              </Link>
-              .
-            </div>
-            {copyright ? (
-              <div
-                className="footer__copyright" // Developer provided the HTML, so assume it's safe.
-                // eslint-disable-next-line react/no-danger
-                dangerouslySetInnerHTML={{
-                  __html: copyright,
-                }}
-              />
-            ) : null}
           </div>
         )}
       </div>
