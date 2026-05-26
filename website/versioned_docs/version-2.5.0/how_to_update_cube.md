@@ -44,14 +44,14 @@ versionDiff:
 
 キューブのシステムソフトウェア v02.0007（BLE プロトコルバージョン v2.5.0）に関する情報を追加しました。
 
-- [システム状態](how_to_use_cube.md#システム状態)のトイオ・プレイグラウンドの状態と遷移条件の修正
+- [システム状態](how_to_use_cube.md#システム状態)のトイオ・プレイグラウンドの状態と遷移条件の更新
 - 現在のコネクションインターバル値の取得の応答の通知タイミングの追加
   - [コネクションインターバル変更要求](configuration.md#コネクションインターバル変更要求)
 - 保存可能な設定の追加
-  - [保存した設定の初期化](savable_configuration.md#保存した設定の初期化)
-  - [保存した設定の初期化の応答](savable_configuration.md#保存した設定の初期化の応答)
-  - [スピーカー消音の設定](savable_configuration.md#スピーカー消音の設定)
-  - [スピーカー消音の設定の応答](savable_configuration.md#スピーカー消音の設定の応答)
+  - [保存した設定の初期化](persistent_configuration.md#保存した設定の初期化)
+  - [保存した設定の初期化の応答](persistent_configuration.md#保存した設定の初期化の応答)
+  - [スピーカー消音の設定](persistent_configuration.md#スピーカー消音の設定)
+  - [スピーカー消音の設定の応答](persistent_configuration.md#スピーカー消音の設定の応答)
 - リモート電源オフの要求の追加
   - [リモート電源オフの要求](configuration.md#リモート電源オフの要求)
   - [リモート電源オフの要求の応答](configuration.md#リモート電源オフの要求の応答)
