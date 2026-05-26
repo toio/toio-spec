@@ -56,12 +56,12 @@ Added information on the cube's system software v02.0006 (BLE protocol version v
   - Added [the notification by high precision Euler angle](ble_high_precision_tilt_sensor#obtaining-posture-angle-information-notifications-in-high-precision-euler-angles-)
 - [Configuration](ble_configuration)
   - Added specifiable values to [posture angle detection settings](ble_configuration#posture-angle-detection-settings-)
-  - Added the operation to [request to change connection interval](ble_configuration#request-to-change-connection-interval-)
-  - Added the operation to [obtain the requested connection interval value](ble_configuration#obtaining-the-requested-connection-interval-value-)
-  - Added the operation to [obtain the actual connection interval value](ble_configuration#obtaining-the-actual-connection-interval-value-)
-  - Added the [responses to request to change connection interval](ble_configuration#responses-to-request-to-change-connection-interval-)
-  - Added the [responses to obtain the requested connection interval value](ble_configuration#responses-to-obtain-the-requested-connection-interval-value-)
-  - Added the [responses to obtain the actual connection interval value](ble_configuration#responses-to-obtain-the-actual-connection-interval-value-)
+  - Added the operation to [request to change connection interval](configuration.md#request-to-change-connection-interval)
+  - Added the operation to [obtain the requested connection interval value](configuration.md#obtaining-the-requested-connection-interval-value)
+  - Added the operation to [obtain the actual connection interval value](configuration.md#obtaining-the-actual-connection-interval-value)
+  - Added the [responses to request to change connection interval](configuration.md#responses-to-request-to-change-connection-interval)
+  - Added the [responses to obtain the requested connection interval value](configuration.md#responses-to-obtain-the-requested-connection-interval-value)
+  - Added the [responses to obtain the actual connection interval value](configuration.md#responses-to-obtain-the-actual-connection-interval-value)
 
 ### 2023/12/14
 

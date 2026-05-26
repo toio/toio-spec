@@ -1,7 +1,7 @@
 ---
 id: ble_serialized_information
 title: Serialized information
-sidebar_label: Serialized information
+sidebar_label: 🆕 Serialized information
 original_id: ble_serialized_information
 ---
 
@@ -25,7 +25,7 @@ Serialized information can be obtained using the following characteristic. This 
 
 There are no write operations used for serialized information.
 
-## Read operations / Notifications
+## Read operations / Notifications <span class="new"/>
 
 This characteristic notifies the BLE central with information.
 The notified information can also be obtained with a read operation.
