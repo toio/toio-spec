@@ -113,7 +113,7 @@
             },
             {
               "type": "doc",
-              "id": "ble_savable_configuration"
+              "id": "ble_persistent_configuration"
             }
           ],
           "collapsed": false

@@ -228,15 +228,15 @@ When `0x01` is set, notifications are sent only when there is change in the tilt
 | `0x01`           | Notifications only when there is a change |
 
 
-### Request to change connection interval <span class="new"/>
+### Request to change connection interval
 
 The cube requests the Central device to change the connection interval by writing the following data.
 If the Central device accepts the change request, the connection interval is changed.
 If the Central device responds to the change request, the connection interval is changed.
 
-See [Responses to request to change connection interval](#responses-to-request-to-change-connection-interval-) for how to obtain setting results.
+See [Responses to request to change connection interval](#responses-to-request-to-change-connection-interval) for how to obtain setting results.
 
-See [Obtaining the actual connection interval value](#obtaining-the-actual-connection-interval-value-) for how to obtain actual connection interval value.
+See [Obtaining the actual connection interval value](#obtaining-the-actual-connection-interval-value) for how to obtain actual connection interval value.
 
 :::note
 
@@ -261,30 +261,30 @@ Possible values are 0xFFFF (no requested value) or values from 0x0006 to 0x0C80.
 The connection interval time is the specified value x1.25 [ms].
 
 
-### Obtaining the requested connection interval value <span class="new"/>
+### Obtaining the requested connection interval value
 
-Get the requested value set in "Connection Interval Change Request" by writing the following data.  
+Get the requested value set in [Request to change connection interval](#request-to-change-connection-interval) by writing the following data.
 This value is not the actual connection interval value.
 
 If the requested connection interval value is obtained without a
-[Request to change connection interval](#Request-to-change-connection-interval-),
+[Request to change connection interval](#request-to-change-connection-interval),
 0x08 (as minimum value) and 0x50 (as maximum value) can be obtained.
 
-See [Responses to obtain the requested connection interval value](#responses-to-obtain-the-requested-connection-interval-value-) for how to obtain setting results.
+See [Responses to obtain the requested connection interval value](#responses-to-obtain-the-requested-connection-interval-value) for how to obtain setting results.
 
 | Data location | Type  | Content            | Example                                                                               |
 | ------------- | ----- | ------------------ | ------------------------------------------------------------------------------------- |
 | 0             | UInt8 | Configuration type | <span class="fixed">`0x31`</span> (Obtaining the requested connection interval value) |
 | 1             | UInt8 | Reserved           | `0x00`                                                                                |
 
-### Obtaining the actual connection interval value <span class="new"/>
+### Obtaining the actual connection interval value
 
 Get the actual connection interval value between the cube and the central device by writing the following data.
 
 You can check if the connection interval was changed as requested by comparing this value with the requested value set in the
-[Request to change connection interval](#Request-to-change-connection-interval-).
+[Request to change connection interval](#request-to-change-connection-interval).
 
-See [Responses to obtain the actual connection interval value](#responses-to-obtain-the-actual-connection-interval-value-) for how to obtain setting results.
+See [Responses to obtain the actual connection interval value](#responses-to-obtain-the-actual-connection-interval-value) for how to obtain setting results.
 
 | Data location | Type  | Content            | Example                                                                             |
 | ------------- | ----- | ------------------ | ----------------------------------------------------------------------------------- |
@@ -390,9 +390,9 @@ The definitions of the result values are as follows.
 | Value other than `0x00` | NG/Setting failed   |
 
 
-### Responses to request to change connection interval <span class="new"/>
+### Responses to request to change connection interval
 
-If [Request to change connection interval](#Request-to-change-connection-interval-) is written, the following responses are obtained depending on the result.
+If [Request to change connection interval](#request-to-change-connection-interval) is written, the following responses are obtained depending on the result.
 
 | Data location | Type  | Content            | Example                                                                                |
 | ------------- | ----- | ------------------ | -------------------------------------------------------------------------------------- |
@@ -407,9 +407,9 @@ The definitions of the result values are as follows.
 | `0x00`                  | OK/Set successfully |
 | Value other than `0x00` | NG/Setting failed   |
 
-### Responses to obtain the requested connection interval value <span class="new"/>
+### Responses to obtain the requested connection interval value
 
-If [Obtaining the requested connection interval value](#Obtaining-the-requested-connectionr-interval-value-) is written, the following responses are obtained depending on the result.
+If [Obtaining the requested connection interval value](#obtaining-the-requested-connection-interval-value) is written, the following responses are obtained depending on the result.
 
 | Data location | Type   | Content            | Example                                                                                         |
 | ------------- | ------ | ------------------ | ----------------------------------------------------------------------------------------------- |
@@ -418,9 +418,9 @@ If [Obtaining the requested connection interval value](#Obtaining-the-requested-
 | 2             | UInt16 | minimum value      | `0x0008` (10 milliseconds)                                                                      |
 | 4             | UInt16 | maximum value      | `0x0050` (100 milliseconds)                                                                     |
 
-### Responses to obtain the actual connection interval value <span class="new"/>
+### Responses to obtain the actual connection interval value
 
-If [Obtaining the actual connection interval value](#Obtaining-the-actual-connection-interval-value-) is written, the following responses are obtained depending on the result.
+If [Obtaining the actual connection interval value](#obtaining-the-actual-connection-interval-value) is written, the following responses are obtained depending on the result.
 
 | Data location | Type   | Content                   | Example                                                                                      |
 | ------------- | ------ | ------------------------- | -------------------------------------------------------------------------------------------- |

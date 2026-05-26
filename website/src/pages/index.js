@@ -6,7 +6,8 @@
  */
 
 import Link from '@docusaurus/Link'
-import Translate from '@docusaurus/Translate'
+import Head from '@docusaurus/Head'
+import Translate, { translate } from '@docusaurus/Translate'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Layout from '@theme/Layout'
 import clsx from 'clsx'
@@ -76,11 +77,20 @@ function HomepageHeader() {
     </header>
   )
 }
-export default (props) => (
-  <Layout>
-    <HomepageHeader />
-    <main>
-      <HomepageFeatures />
-    </main>
-  </Layout>
-)
+export default function Home() {
+  const homepageTitle = translate({ message: 'toio™コア キューブ 技術仕様', id: 'homepage.title' })
+
+  return (
+    <Layout>
+      <Head>
+        <title>{homepageTitle}</title>
+        <meta property="og:title" content={homepageTitle} />
+        <meta name="twitter:title" content={homepageTitle} />
+      </Head>
+      <HomepageHeader />
+      <main>
+        <HomepageFeatures />
+      </main>
+    </Layout>
+  )
+}

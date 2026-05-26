@@ -19,7 +19,7 @@ original_id: ble_configuration
 :::note
 
 書き込み操作によって変更した各種設定値は、キューブの接続が切れると初期値に戻ります。
-電源を一度切ってから入れても設定が維持される項目については、[保存可能な設定](savable_configuration.md)を参照してください。
+電源を一度切ってから入れても設定が維持される項目については、[保存可能な設定](persistent_configuration.md)を参照してください。
 
 :::
 

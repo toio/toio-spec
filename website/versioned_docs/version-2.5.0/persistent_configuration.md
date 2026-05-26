@@ -1,8 +1,8 @@
 ---
-id: ble_savable_configuration
+id: ble_persistent_configuration
 title: '保存可能な設定'
 sidebar_label: '保存可能な設定'
-original_id: ble_savable_configuration
+original_id: ble_persistent_configuration
 versionDiff:
   headingLevels: [1]
 ---
