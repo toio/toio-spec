@@ -44,7 +44,9 @@ The value for moving the cube forward is `1` and the value for moving it backwar
 #### Motor speed command values
 
 Specify the rotation speed for the motor that was just specified.
-The speed of the motor can be specified with values ranging between `0` and `255`. The correlation between the speed of the motor and the actual rotation speed of the wheels is shown in the graph below.
+Motor speed command values can range from `0` to `255`. The actual wheel speed changes only for values from `8` to `115`. Values below `8` result in `0 rpm`. Values of `115` or higher result in a constant speed of `494 rpm`.
+
+From `8` to `115`, the command value and actual wheel speed have a linear relationship. The graph below shows this relationship.
 
 ![Input Speed and Wheel Speed](assets/motor_wheel_speed_v2.1.0.svg)
 
