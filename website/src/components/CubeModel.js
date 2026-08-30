@@ -1,13 +1,12 @@
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import { useGLTF } from '@react-three/drei'
-import React, { useRef } from 'react'
+import React from 'react'
 
 export const CubeModel = ({ props }) => {
-  const group = useRef()
-  const gltfPath = useBaseUrl('/model/toiocorecube_v003.gltf')
-  const { nodes, materials } = useGLTF(gltfPath)
+  const glbPath = useBaseUrl('/model/toiocorecube_v003.glb')
+  const { nodes, materials } = useGLTF(glbPath)
   return (
-    <group ref={group} rotation={[Math.PI / 2, 0, Math.PI / 2]} {...props} dispose={null}>
+    <group rotation={[Math.PI / 2, 0, Math.PI / 2]} {...props} dispose={null}>
       <mesh
         castShadow
         receiveShadow
